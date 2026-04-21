@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail Auto-Labeler</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #1e1b4b;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.875rem;
+    }
+    .logo {
+      width: 2.25rem; height: 2.25rem;
+      background: #4f46e5;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; flex-shrink: 0;
+    }
+    header h1 { font-size: 1.2rem; font-weight: 600; }
+    header p  { font-size: 0.8rem; color: #a5b4fc; margin-top: 0.15rem; }
+
+    /* ── Layout ── */
+    main { max-width: 1440px; margin: 0 auto; padding: 1.5rem 1.75rem 3rem; }
+
+    /* ── Stats bar ── */
+    .stats {
+      display: flex; flex-wrap: wrap; gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .stat {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 0.6rem 1.1rem;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #111827;
+    }
+    .stat.green strong { color: #16a34a; }
+    .stat.amber strong { color: #d97706; }
+    .stat.red   strong { color: #dc2626; }
+
+    /* ── Toolbar ── */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      padding: 0.75rem 1rem;
+    }
+    .toolbar-left { display: flex; align-items: center; gap: 0.875rem; }
+    label.select-all-label {
+      display: flex; align-items: center; gap: 0.4rem;
+      font-size: 0.875rem; cursor: pointer; user-select: none;
+    }
+    #selectAll { width: 1rem; height: 1rem; cursor: pointer; accent-color: #4f46e5; }
+    #selectedCount { font-size: 0.8rem; color: #6b7280; }
+
+    #applyBtn {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: #4f46e5; color: #fff;
+      border: none; border-radius: 6px;
+      padding: 0.5rem 1.25rem;
+      font-size: 0.875rem; font-weight: 500;
+      cursor: pointer; transition: background 0.15s;
+    }
+    #applyBtn:hover:not(:disabled) { background: #4338ca; }
+    #applyBtn:disabled { background: #9ca3af; cursor: not-allowed; }
+
+    /* ── Table ── */
+    .table-wrap {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 0 0 8px 8px;
+      overflow-x: auto;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8625rem; }
+    thead { background: #f9fafb; border-bottom: 1px solid #e5e7eb; }
+    th {
+      padding: 0.7rem 1rem;
+      text-align: left; font-weight: 600;
+      color: #374151; white-space: nowrap;
+    }
+    td { padding: 0.7rem 1rem; border-bottom: 1px solid #f3f4f6; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+
+    .col-check   { width: 2.5rem; text-align: center; }
+    .col-sender  { width: 20%; }
+    .col-subject { width: 22%; }
+    .col-label   { width: 14%; }
+    .col-conf    { width: 7%; text-align: center; }
+    .col-reason  { /* auto */ }
+
+    .cell-clamp {
+      max-width: 260px;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      display: block;
+    }
+    input[type="checkbox"] { width: 1rem; height: 1rem; cursor: pointer; accent-color: #4f46e5; }
+
+    /* ── Label badge ── */
+    .label-badge {
+      display: inline-block;
+      background: #e0e7ff; color: #3730a3;
+      border-radius: 4px;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.775rem; font-weight: 500;
+      white-space: nowrap;
+    }
+    .no-label { color: #9ca3af; font-style: italic; font-size: 0.8rem; }
+
+    /* ── Confidence pill ── */
+    .conf-pill {
+      display: inline-block;
+      border-radius: 9999px;
+      padding: 0.2rem 0.55rem;
+      font-size: 0.775rem; font-weight: 600;
+    }
+    .conf-high { background: #dcfce7; color: #166534; }
+    .conf-mid  { background: #fef3c7; color: #92400e; }
+    .conf-low  { background: #fee2e2; color: #991b1b; }
+
+    .reasoning { color: #4b5563; line-height: 1.45; font-size: 0.8rem; }
+
+    /* ── Spinner ── */
+    .spinner {
+      display: none;
+      width: 0.85rem; height: 0.85rem;
+      border: 2px solid rgba(255,255,255,0.35);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.65s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Confirmation ── */
+    #confirmation {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      text-align: center;
+    }
+    .success-circle {
+      width: 5rem; height: 5rem;
+      border-radius: 50%;
+      background: #dcfce7;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.25rem;
+      margin-bottom: 1.25rem;
+    }
+    #confirmation h2 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    #confirmation .sub { color: #6b7280; margin-bottom: 1.75rem; font-size: 0.95rem; }
+
+    #quitBtn {
+      background: #1e1b4b; color: #fff;
+      border: none; border-radius: 6px;
+      padding: 0.6rem 1.5rem;
+      font-size: 0.875rem; font-weight: 500;
+      cursor: pointer; transition: background 0.15s;
+    }
+    #quitBtn:hover { background: #312e81; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">✉</div>
+  <div>
+    <h1>Gmail Auto-Labeler</h1>
+    <p>Review AI-suggested labels before applying</p>
+  </div>
+</header>
+
+<main>
+  <!-- ── Preview ── -->
+  <div id="preview">
+    <div class="stats" id="statsBar"></div>
+
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <label class="select-all-label">
+          <input type="checkbox" id="selectAll"> Select all
+        </label>
+        <span id="selectedCount">0 selected</span>
+      </div>
+      <button id="applyBtn" disabled>
+        <span class="spinner" id="spinner"></span>
+        <span id="btnText">Apply Selected Labels</span>
+      </button>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th class="col-check"></th>
+            <th class="col-sender">Sender</th>
+            <th class="col-subject">Subject</th>
+            <th class="col-label">Suggested Label</th>
+            <th class="col-conf">Confidence</th>
+            <th class="col-reason">Reasoning</th>
+          </tr>
+        </thead>
+        <tbody id="emailTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── Confirmation ── -->
+  <div id="confirmation">
+    <div class="success-circle">✅</div>
+    <h2>Labels Applied!</h2>
+    <p class="sub" id="confirmMsg"></p>
+    <button id="quitBtn" onclick="quit()">Close server &amp; quit</button>
+  </div>
+</main>
+
+<script>
+  // Data injected by Flask/Jinja2
+  const DATA = {{ suggestions | tojson | safe }};
+
+  // ── Stats ────────────────────────────────────────────────────────────────
+  const withSug  = DATA.filter(d => d.suggestion);
+  const highConf = withSug.filter(d => d.suggestion.confidence >= 80);
+  const midConf  = withSug.filter(d => d.suggestion.confidence >= 50 && d.suggestion.confidence < 80);
+  const lowConf  = withSug.filter(d => d.suggestion.confidence < 50);
+
+  document.getElementById('statsBar').innerHTML = `
+    <div class="stat"><strong>${DATA.length}</strong>Emails analyzed</div>
+    <div class="stat"><strong>${withSug.length}</strong>Suggestions made</div>
+    <div class="stat green"><strong>${highConf.length}</strong>High confidence ≥80%</div>
+    <div class="stat amber"><strong>${midConf.length}</strong>Medium 50–79%</div>
+    <div class="stat red"><strong>${lowConf.length}</strong>Low &lt;50%</div>
+  `;
+
+  // ── Build table ──────────────────────────────────────────────────────────
+  const tbody = document.getElementById('emailTable');
+
+  DATA.forEach((item, idx) => {
+    const s = item.suggestion;
+    const has = s !== null && s !== undefined;
+    const conf = has ? s.confidence : 0;
+
+    // Default-uncheck anything below 50% confidence
+    const checked = has && conf >= 50;
+
+    let pillClass = 'conf-high';
+    if (conf < 50) pillClass = 'conf-low';
+    else if (conf < 80) pillClass = 'conf-mid';
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="col-check">
+        ${has ? `<input type="checkbox" class="row-check" data-idx="${idx}" ${checked ? 'checked' : ''}>` : ''}
+      </td>
+      <td class="col-sender">
+        <span class="cell-clamp" title="${esc(item.sender)}">${esc(item.sender)}</span>
+      </td>
+      <td class="col-subject">
+        <span class="cell-clamp" title="${esc(item.subject)}">${esc(item.subject)}</span>
+      </td>
+      <td class="col-label">
+        ${has
+          ? `<span class="label-badge">${esc(s.label_name)}</span>`
+          : '<span class="no-label">—</span>'}
+      </td>
+      <td class="col-conf">
+        ${has ? `<span class="conf-pill ${pillClass}">${conf}%</span>` : ''}
+      </td>
+      <td class="col-reason">
+        ${has
+          ? `<span class="reasoning">${esc(s.reasoning)}</span>`
+          : '<span class="no-label">No matching label found</span>'}
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // ── Checkbox logic ───────────────────────────────────────────────────────
+  function syncCount() {
+    const allBoxes     = document.querySelectorAll('.row-check');
+    const checkedBoxes = document.querySelectorAll('.row-check:checked');
+    const n = checkedBoxes.length;
+
+    document.getElementById('selectedCount').textContent = `${n} selected`;
+    document.getElementById('applyBtn').disabled = n === 0;
+    document.getElementById('btnText').textContent = n > 0
+      ? `Apply Selected (${n})`
+      : 'Apply Selected Labels';
+
+    const sa = document.getElementById('selectAll');
+    sa.indeterminate = n > 0 && n < allBoxes.length;
+    sa.checked = allBoxes.length > 0 && n === allBoxes.length;
+  }
+
+  document.getElementById('emailTable').addEventListener('change', e => {
+    if (e.target.classList.contains('row-check')) syncCount();
+  });
+
+  document.getElementById('selectAll').addEventListener('change', e => {
+    document.querySelectorAll('.row-check').forEach(cb => cb.checked = e.target.checked);
+    syncCount();
+  });
+
+  syncCount();
+
+  // ── Apply labels ─────────────────────────────────────────────────────────
+  document.getElementById('applyBtn').addEventListener('click', async () => {
+    const btn     = document.getElementById('applyBtn');
+    const spinner = document.getElementById('spinner');
+    const btnText = document.getElementById('btnText');
+
+    const selected = [];
+    document.querySelectorAll('.row-check:checked').forEach(cb => {
+      const item = DATA[parseInt(cb.dataset.idx)];
+      selected.push({ id: item.id, label_id: item.suggestion.label_id });
+    });
+
+    btn.disabled = true;
+    spinner.style.display = 'block';
+    btnText.textContent = 'Applying…';
+
+    try {
+      const res = await fetch('/apply', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ selected }),
+      });
+      const data = await res.json();
+
+      document.getElementById('preview').style.display = 'none';
+      const conf = document.getElementById('confirmation');
+      conf.style.display = 'flex';
+
+      const errNote = data.errors ? ` (${data.errors} error${data.errors !== 1 ? 's' : ''})` : '';
+      document.getElementById('confirmMsg').textContent =
+        `${data.applied} label${data.applied !== 1 ? 's' : ''} applied successfully${errNote}.`;
+    } catch (err) {
+      alert('Error applying labels: ' + err.message);
+      btn.disabled = false;
+      spinner.style.display = 'none';
+      syncCount();
+    }
+  });
+
+  // ── Quit / shutdown ───────────────────────────────────────────────────────
+  async function quit() {
+    const qb = document.getElementById('quitBtn');
+    qb.disabled = true;
+    qb.textContent = 'Shutting down…';
+    try { await fetch('/shutdown', { method: 'POST' }); } catch (_) {}
+    // Give server a moment, then show a closed message
+    setTimeout(() => {
+      document.getElementById('confirmation').innerHTML =
+        '<p style="color:#6b7280;margin-top:3rem">Server stopped. You can close this tab.</p>';
+    }, 900);
+  }
+
+  // ── HTML escape ───────────────────────────────────────────────────────────
+  function esc(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+</script>
+
+</body>
+</html>
