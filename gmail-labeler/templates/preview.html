@@ -258,7 +258,7 @@
 
 <script>
   const DATA   = {{ suggestions | tojson | safe }};
-  const LABELS = {{ labels | tojson | safe }};
+  const LABELS = {{ labels | tojson | safe }}.sort((a, b) => a.name.localeCompare(b.name));
 
   // Snapshot original suggestions before any user edits
   const originalLabels = {};
