@@ -21,6 +21,7 @@ from googleapiclient.discovery import build
 load_dotenv()
 
 SCOPES = ["https://www.googleapis.com/auth/gmail.modify"]
+HISTORY_FILE = "history.json"
 
 SYSTEM_LABEL_IDS = {
     "INBOX", "SENT", "DRAFTS", "SPAM", "TRASH", "STARRED", "IMPORTANT",
@@ -31,7 +32,59 @@ SYSTEM_LABEL_IDS = {
 app = Flask(__name__)
 _gmail_service = None
 _label_suggestions = []
+_user_labels = []
 _shutdown_event = threading.Event()
+
+
+# ── History helpers ───────────────────────────────────────────────────────────
+
+def load_history() -> list:
+    if not os.path.exists(HISTORY_FILE):
+        return []
+    try:
+        with open(HISTORY_FILE) as f:
+            return json.load(f)
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def save_history(new_entries: list) -> None:
+    history = load_history()
+    history.extend(new_entries)
+    with open(HISTORY_FILE, "w") as f:
+        json.dump(history, f, indent=2)
+
+
+def _sender_domain(sender: str) -> str:
+    m = re.search(r"@([\w.\-]+)", sender)
+    return m.group(1).lower() if m else ""
+
+
+_STOP_WORDS = {
+    "the", "a", "an", "is", "in", "on", "at", "to", "for", "of",
+    "and", "or", "your", "you", "re", "be", "has", "have", "with",
+    "it", "this", "that", "we", "i", "my", "no", "subject",
+}
+
+
+def _subject_keywords(subject: str) -> list:
+    words = re.findall(r"[a-z]+", subject.lower())
+    return [w for w in words if w not in _STOP_WORDS][:8]
+
+
+def get_relevant_examples(history: list, sender: str, subject: str, n: int = 5) -> list:
+    domain = _sender_domain(sender)
+    keywords = set(_subject_keywords(subject))
+    scored = []
+    for entry in history:
+        score = 0
+        if domain and entry.get("sender_domain") == domain:
+            score += 3
+        score += len(keywords & set(entry.get("subject_keywords", [])))
+        if score > 0:
+            scored.append((score, entry))
+    scored.sort(key=lambda x: -x[0])
+    return [e for _, e in scored[:n]]
 
 
 # ── Gmail helpers ─────────────────────────────────────────────────────────────
@@ -90,7 +143,7 @@ def _extract_text(part: dict) -> str:
     return ""
 
 
-def extract_email_content(msg: dict) -> tuple[str, str, str]:
+def extract_email_content(msg: dict) -> tuple:
     headers = {h["name"].lower(): h["value"] for h in msg["payload"].get("headers", [])}
     sender = headers.get("from", "Unknown")
     subject = headers.get("subject", "(No Subject)")
@@ -151,7 +204,8 @@ def build_system_prompt(labels: list) -> str:
         "- Respond with ONLY a JSON object — no markdown, no code fences.\n"
         '- If a label clearly fits, return:\n'
         '  {"label_id":"<id>","label_name":"<name>","confidence":<0-100>,"reasoning":"<one sentence>"}\n'
-        "- If no label fits well, return exactly: null"
+        "- If no label fits well, return exactly: null\n\n"
+        "When past decisions are provided, use them to align with the user's labeling preferences."
     )
 
 
@@ -172,10 +226,10 @@ def parse_claude_response(text: str):
 
 
 def classify_emails_with_claude(
-    client: anthropic.Anthropic, labels: list, emails: list
+    client: anthropic.Anthropic, labels: list, emails: list, history: list = None
 ) -> list:
-    # Build the system prompt once; cache_control caches it across all calls.
     system_prompt = build_system_prompt(labels)
+    history = history or []
     suggestions = []
     batch_size = 10
     total = len(emails)
@@ -187,16 +241,32 @@ def classify_emails_with_claude(
 
         for email in batch:
             sender, subject, body = extract_email_content(email)
+
+            examples_text = ""
+            if history:
+                relevant = get_relevant_examples(history, sender, subject)
+                if relevant:
+                    lines = []
+                    for ex in relevant:
+                        if ex["accepted"]:
+                            action = f"labeled '{ex['applied_label_name']}' (accepted)"
+                        else:
+                            action = (
+                                f"suggested '{ex['suggested_label_name']}' "
+                                f"but user corrected to '{ex['applied_label_name']}'"
+                            )
+                        lines.append(f"  - @{ex['sender_domain']}: {action}")
+                    examples_text = "\n\nRelevant past decisions:\n" + "\n".join(lines)
+
             user_message = (
                 f"Classify this email:\n"
                 f"From: {sender}\n"
                 f"Subject: {subject}\n"
                 f"Body preview: {body}"
+                + examples_text
             )
 
             try:
-                # The system prompt (with the full label list) is cached via
-                # cache_control so repeated calls don't re-tokenize it.
                 resp = client.messages.create(
                     model="claude-sonnet-4-20250514",
                     max_tokens=300,
@@ -231,7 +301,11 @@ def classify_emails_with_claude(
 
 @app.route("/")
 def index():
-    return render_template("preview.html", suggestions=_label_suggestions)
+    return render_template(
+        "preview.html",
+        suggestions=_label_suggestions,
+        labels=_user_labels,
+    )
 
 
 @app.route("/apply", methods=["POST"])
@@ -239,6 +313,9 @@ def apply_labels():
     data = request.get_json(force=True)
     selected = data.get("selected", [])
     applied, errors = 0, 0
+    history_entries = []
+
+    suggestions_by_id = {s["id"]: s for s in _label_suggestions}
 
     for item in selected:
         try:
@@ -248,9 +325,26 @@ def apply_labels():
                 body={"addLabelIds": [item["label_id"]]},
             ).execute()
             applied += 1
+
+            email_data = suggestions_by_id.get(item["id"], {})
+            original_name = item.get("original_label_name", item.get("label_name", ""))
+            applied_name = item.get("label_name", "")
+            accepted = original_name == applied_name
+
+            history_entries.append({
+                "sender_domain": _sender_domain(email_data.get("sender", "")),
+                "subject_keywords": _subject_keywords(email_data.get("subject", "")),
+                "suggested_label_name": original_name,
+                "applied_label_name": applied_name,
+                "accepted": accepted,
+                "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+            })
         except Exception as exc:
             print(f"Error labeling {item['id']}: {exc}")
             errors += 1
+
+    if history_entries:
+        save_history(history_entries)
 
     return jsonify({"applied": applied, "errors": errors, "total": len(selected)})
 
@@ -270,7 +364,7 @@ def _run_flask():
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 def main():
-    global _gmail_service, _label_suggestions
+    global _gmail_service, _label_suggestions, _user_labels
 
     api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
@@ -290,6 +384,7 @@ def main():
             "No user-created labels found.\n"
             "Create at least one label in Gmail first, then re-run."
         )
+    _user_labels = labels
     print(f"Found {len(labels)} label(s): {', '.join(lb['name'] for lb in labels)}")
 
     print("\nFetching unlabeled inbox emails …")
@@ -299,9 +394,13 @@ def main():
         sys.exit("No unlabeled inbox emails found. Nothing to do.")
     print(f"Found {len(emails)} unlabeled email(s) to process.")
 
+    history = load_history()
+    if history:
+        print(f"Loaded {len(history)} past labeling decision(s) — will use as examples.")
+
     print("\nClassifying emails with Claude AI …")
     client = anthropic.Anthropic(api_key=api_key)
-    _label_suggestions = classify_emails_with_claude(client, labels, emails)
+    _label_suggestions = classify_emails_with_claude(client, labels, emails, history=history)
 
     with_suggestions = sum(1 for s in _label_suggestions if s["suggestion"])
     print(

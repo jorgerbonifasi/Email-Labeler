@@ -113,7 +113,7 @@
     .col-check   { width: 2.5rem; text-align: center; }
     .col-sender  { width: 20%; }
     .col-subject { width: 22%; }
-    .col-label   { width: 14%; }
+    .col-label   { width: 16%; }
     .col-conf    { width: 7%; text-align: center; }
     .col-reason  { /* auto */ }
 
@@ -124,14 +124,27 @@
     }
     input[type="checkbox"] { width: 1rem; height: 1rem; cursor: pointer; accent-color: #4f46e5; }
 
-    /* ── Label badge ── */
-    .label-badge {
-      display: inline-block;
-      background: #e0e7ff; color: #3730a3;
+    /* ── Label dropdown ── */
+    .label-select {
+      background: #e0e7ff;
+      color: #3730a3;
+      border: 1px solid #c7d2fe;
       border-radius: 4px;
-      padding: 0.2rem 0.5rem;
-      font-size: 0.775rem; font-weight: 500;
-      white-space: nowrap;
+      padding: 0.2rem 0.4rem;
+      font-size: 0.775rem;
+      font-weight: 500;
+      cursor: pointer;
+      outline: none;
+      max-width: 180px;
+      width: 100%;
+    }
+    .label-select:focus {
+      box-shadow: 0 0 0 2px #818cf8;
+    }
+    .label-select.changed {
+      background: #fef3c7;
+      color: #92400e;
+      border-color: #fcd34d;
     }
     .no-label { color: #9ca3af; font-style: italic; font-size: 0.8rem; }
 
@@ -244,8 +257,19 @@
 </main>
 
 <script>
-  // Data injected by Flask/Jinja2
-  const DATA = {{ suggestions | tojson | safe }};
+  const DATA   = {{ suggestions | tojson | safe }};
+  const LABELS = {{ labels | tojson | safe }};
+
+  // Snapshot original suggestions before any user edits
+  const originalLabels = {};
+  DATA.forEach((item, idx) => {
+    if (item.suggestion) {
+      originalLabels[idx] = {
+        label_id:   item.suggestion.label_id,
+        label_name: item.suggestion.label_name,
+      };
+    }
+  });
 
   // ── Stats ────────────────────────────────────────────────────────────────
   const withSug  = DATA.filter(d => d.suggestion);
@@ -261,6 +285,15 @@
     <div class="stat red"><strong>${lowConf.length}</strong>Low &lt;50%</div>
   `;
 
+  // ── Build label dropdown options ─────────────────────────────────────────
+  function buildOptions(selectedId) {
+    const none = `<option value="">(— no label —)</option>`;
+    const opts = LABELS.map(l =>
+      `<option value="${esc(l.id)}" data-name="${esc(l.name)}" ${l.id === selectedId ? 'selected' : ''}>${esc(l.name)}</option>`
+    ).join('');
+    return none + opts;
+  }
+
   // ── Build table ──────────────────────────────────────────────────────────
   const tbody = document.getElementById('emailTable');
 
@@ -269,7 +302,6 @@
     const has = s !== null && s !== undefined;
     const conf = has ? s.confidence : 0;
 
-    // Default-uncheck anything below 50% confidence
     const checked = has && conf >= 50;
 
     let pillClass = 'conf-high';
@@ -289,7 +321,7 @@
       </td>
       <td class="col-label">
         ${has
-          ? `<span class="label-badge">${esc(s.label_name)}</span>`
+          ? `<select class="label-select" data-idx="${idx}" data-original-name="${esc(s.label_name)}">${buildOptions(s.label_id)}</select>`
           : '<span class="no-label">—</span>'}
       </td>
       <td class="col-conf">
@@ -304,7 +336,7 @@
     tbody.appendChild(tr);
   });
 
-  // ── Checkbox logic ───────────────────────────────────────────────────────
+  // ── Checkbox + dropdown change handling ──────────────────────────────────
   function syncCount() {
     const allBoxes     = document.querySelectorAll('.row-check');
     const checkedBoxes = document.querySelectorAll('.row-check:checked');
@@ -322,6 +354,28 @@
   }
 
   document.getElementById('emailTable').addEventListener('change', e => {
+    if (e.target.classList.contains('label-select')) {
+      const idx = parseInt(e.target.dataset.idx);
+      const opt = e.target.options[e.target.selectedIndex];
+      const newId   = e.target.value;
+      const newName = opt.dataset.name || '';
+
+      // Update DATA so apply picks up the new choice
+      DATA[idx].suggestion.label_id   = newId;
+      DATA[idx].suggestion.label_name = newName;
+
+      // Highlight if changed from original
+      const isChanged = newName !== e.target.dataset.originalName;
+      e.target.classList.toggle('changed', isChanged);
+
+      // If "no label" chosen, uncheck the row
+      const cb = document.querySelector(`.row-check[data-idx="${idx}"]`);
+      if (cb && !newId) {
+        cb.checked = false;
+        syncCount();
+        return;
+      }
+    }
     if (e.target.classList.contains('row-check')) syncCount();
   });
 
@@ -340,8 +394,15 @@
 
     const selected = [];
     document.querySelectorAll('.row-check:checked').forEach(cb => {
-      const item = DATA[parseInt(cb.dataset.idx)];
-      selected.push({ id: item.id, label_id: item.suggestion.label_id });
+      const idx  = parseInt(cb.dataset.idx);
+      const item = DATA[idx];
+      const orig = originalLabels[idx] || {};
+      selected.push({
+        id:                  item.id,
+        label_id:            item.suggestion.label_id,
+        label_name:          item.suggestion.label_name,
+        original_label_name: orig.label_name || item.suggestion.label_name,
+      });
     });
 
     btn.disabled = true;
@@ -377,7 +438,6 @@
     qb.disabled = true;
     qb.textContent = 'Shutting down…';
     try { await fetch('/shutdown', { method: 'POST' }); } catch (_) {}
-    // Give server a moment, then show a closed message
     setTimeout(() => {
       document.getElementById('confirmation').innerHTML =
         '<p style="color:#6b7280;margin-top:3rem">Server stopped. You can close this tab.</p>';
