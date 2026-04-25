@@ -319,11 +319,18 @@ def apply_labels():
 
     for item in selected:
         try:
-            _gmail_service.users().messages().modify(
-                userId="me",
-                id=item["id"],
-                body={"addLabelIds": [item["label_id"]]},
-            ).execute()
+            for attempt in range(3):
+                try:
+                    _gmail_service.users().messages().modify(
+                        userId="me",
+                        id=item["id"],
+                        body={"addLabelIds": [item["label_id"]]},
+                    ).execute()
+                    break
+                except Exception:
+                    if attempt == 2:
+                        raise
+                    time.sleep(1.5 ** attempt)
             applied += 1
 
             email_data = suggestions_by_id.get(item["id"], {})
