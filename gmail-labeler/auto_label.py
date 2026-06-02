@@ -153,6 +153,8 @@ def build_domain_rules(history: list) -> dict:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
+    print(f"=== Run started: {time.strftime('%Y-%m-%d %H:%M:%S')} ===")
+
     history = load_history()
     if not history:
         sys.exit(
@@ -229,6 +231,7 @@ def main():
     )
     if skipped_unknown:
         print("Run label_emails.py to review and label the unknown senders.")
+    print(f"=== Run finished: {time.strftime('%Y-%m-%d %H:%M:%S')} ===")
 
 
 if __name__ == "__main__":
