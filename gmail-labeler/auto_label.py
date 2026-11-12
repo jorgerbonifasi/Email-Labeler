@@ -13,6 +13,7 @@ import json
 import base64
 from collections import Counter
 
+import anthropic
 from dotenv import load_dotenv
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -103,9 +104,23 @@ def fetch_unlabeled_inbox(service, user_label_ids: set, max_results: int = 200) 
     return emails
 
 
+CLAUDE_CONFIDENCE_THRESHOLD = 90
+
+_STOP_WORDS = {
+    "the", "a", "an", "is", "in", "on", "at", "to", "for", "of",
+    "and", "or", "your", "you", "re", "be", "has", "have", "with",
+    "it", "this", "that", "we", "i", "my", "no", "subject",
+}
+
+
 def _sender_domain(sender: str) -> str:
     m = re.search(r"@([\w.\-]+)", sender)
     return m.group(1).lower() if m else ""
+
+
+def _subject_keywords(subject: str) -> list:
+    words = re.findall(r"[a-z]+", subject.lower())
+    return [w for w in words if w not in _STOP_WORDS][:8]
 
 
 def _get_header(msg: dict, name: str) -> str:
@@ -113,6 +128,35 @@ def _get_header(msg: dict, name: str) -> str:
         if h["name"].lower() == name.lower():
             return h["value"]
     return ""
+
+
+def _decode_b64(data: str) -> str:
+    if not data:
+        return ""
+    try:
+        return base64.urlsafe_b64decode(data + "==").decode("utf-8", errors="replace")
+    except Exception:
+        return ""
+
+
+def _extract_text(part: dict) -> str:
+    if part.get("mimeType") == "text/plain":
+        return _decode_b64(part.get("body", {}).get("data", ""))
+    for sub in part.get("parts", []):
+        text = _extract_text(sub)
+        if text:
+            return text
+    return ""
+
+
+def fetch_full_body(service, msg_id: str) -> str:
+    msg = service.users().messages().get(
+        userId="me", id=msg_id, format="full"
+    ).execute()
+    body = _extract_text(msg["payload"])
+    if not body:
+        body = _decode_b64(msg["payload"].get("body", {}).get("data", ""))
+    return " ".join(body.split())[:500]
 
 
 # ── History helpers ───────────────────────────────────────────────────────────
@@ -125,6 +169,94 @@ def load_history() -> list:
             return json.load(f)
     except (json.JSONDecodeError, OSError):
         return []
+
+
+def save_history(new_entries: list) -> None:
+    history = load_history()
+    history.extend(new_entries)
+    with open(HISTORY_FILE, "w") as f:
+        json.dump(history, f, indent=2)
+
+
+def get_relevant_examples(history: list, sender: str, subject: str, n: int = 5) -> list:
+    domain = _sender_domain(sender)
+    keywords = set(_subject_keywords(subject))
+    scored = []
+    for entry in history:
+        score = 0
+        if domain and entry.get("sender_domain") == domain:
+            score += 3
+        score += len(keywords & set(entry.get("subject_keywords", [])))
+        if score > 0:
+            scored.append((score, entry))
+    scored.sort(key=lambda x: -x[0])
+    return [e for _, e in scored[:n]]
+
+
+# ── Claude helpers ────────────────────────────────────────────────────────────
+
+def build_system_prompt(labels: list) -> str:
+    label_json = json.dumps(
+        [{"id": lb["id"], "name": lb["name"]} for lb in labels], indent=2
+    )
+    return (
+        "You are an email labeling assistant.\n"
+        "Your job: pick the single most appropriate Gmail label for an email based on its content.\n\n"
+        f"Available labels:\n{label_json}\n\n"
+        "Rules:\n"
+        "- Respond with ONLY a JSON object — no markdown, no code fences.\n"
+        '- If a label clearly fits, return:\n'
+        '  {"label_id":"<id>","label_name":"<name>","confidence":<0-100>,"reasoning":"<one sentence>"}\n'
+        "- If no label fits well, return exactly: null\n\n"
+        "When past decisions are provided, use them to align with the user's labeling preferences."
+    )
+
+
+def parse_claude_response(text: str):
+    text = text.strip()
+    if text.lower() == "null":
+        return None
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        m = re.search(r"\{.*\}", text, re.DOTALL)
+        if m:
+            try:
+                return json.loads(m.group())
+            except json.JSONDecodeError:
+                pass
+    return None
+
+
+def classify_with_claude(client, system_prompt: str, labels: list, history: list,
+                         sender: str, subject: str, body: str):
+    relevant = get_relevant_examples(history, sender, subject)
+    examples_text = ""
+    if relevant:
+        lines = []
+        for ex in relevant:
+            if ex["accepted"]:
+                action = f"labeled '{ex['applied_label_name']}' (accepted)"
+            else:
+                action = (
+                    f"suggested '{ex['suggested_label_name']}' "
+                    f"but user corrected to '{ex['applied_label_name']}'"
+                )
+            lines.append(f"  - @{ex['sender_domain']}: {action}")
+        examples_text = "\n\nRelevant past decisions:\n" + "\n".join(lines)
+
+    user_message = (
+        f"Classify this email:\nFrom: {sender}\nSubject: {subject}\nBody preview: {body}"
+        + examples_text
+    )
+
+    resp = client.messages.create(
+        model="claude-sonnet-4-6",
+        max_tokens=300,
+        system=[{"type": "text", "text": system_prompt, "cache_control": {"type": "ephemeral"}}],
+        messages=[{"role": "user", "content": user_message}],
+    )
+    return parse_claude_response(resp.content[0].text)
 
 
 def build_domain_rules(history: list) -> dict:
@@ -173,19 +305,30 @@ def main():
     for domain, label in sorted(rules.items()):
         print(f"  @{domain}  →  {label}")
 
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    claude_client = anthropic.Anthropic(api_key=api_key) if api_key else None
+    if claude_client:
+        print(f"Claude enabled — will auto-label unknown senders with confidence ≥ {CLAUDE_CONFIDENCE_THRESHOLD}%")
+    else:
+        print("ANTHROPIC_API_KEY not set — skipping Claude fallback for unknown senders.")
+
     print("\nAuthenticating with Gmail …")
     service = get_gmail_service()
     print("Authenticated.")
 
     labels = get_user_labels(service)
     label_name_to_id = {lb["name"]: lb["id"] for lb in labels}
+    label_id_to_name = {lb["id"]: lb["name"] for lb in labels}
     user_label_ids = {lb["id"] for lb in labels}
+
+    system_prompt = build_system_prompt(labels) if claude_client else None
 
     print("\nFetching unlabeled inbox emails …")
     emails = fetch_unlabeled_inbox(service, user_label_ids)
     print(f"Found {len(emails)} unlabeled email(s).")
 
     applied = skipped_unknown = skipped_no_label = errors = 0
+    history_entries = []
 
     for msg in emails:
         sender  = _get_header(msg, "From")
@@ -193,7 +336,49 @@ def main():
         domain  = _sender_domain(sender)
 
         if domain not in rules:
-            skipped_unknown += 1
+            if claude_client:
+                try:
+                    body = fetch_full_body(service, msg["id"])
+                    suggestion = classify_with_claude(
+                        claude_client, system_prompt, labels, history,
+                        sender, subject, body
+                    )
+                    confidence = suggestion.get("confidence", 0) if suggestion else 0
+                    if suggestion and confidence >= CLAUDE_CONFIDENCE_THRESHOLD:
+                        label_id = suggestion.get("label_id")
+                        label_name = suggestion.get("label_name", "")
+                        if not label_id or label_id not in label_id_to_name:
+                            skipped_unknown += 1
+                            continue
+                        for attempt in range(3):
+                            try:
+                                service.users().messages().modify(
+                                    userId="me",
+                                    id=msg["id"],
+                                    body={"addLabelIds": [label_id]},
+                                ).execute()
+                                break
+                            except Exception:
+                                if attempt == 2:
+                                    raise
+                                time.sleep(1.5 ** attempt)
+                        print(f"  ~ @{domain}: \"{subject[:60]}\"  →  {label_name} (Claude {confidence}%)")
+                        applied += 1
+                        history_entries.append({
+                            "sender_domain": domain,
+                            "subject_keywords": _subject_keywords(subject),
+                            "suggested_label_name": label_name,
+                            "applied_label_name": label_name,
+                            "accepted": True,
+                            "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                        })
+                    else:
+                        skipped_unknown += 1
+                except Exception as exc:
+                    print(f"  ! Claude error for {msg['id']}: {exc}")
+                    skipped_unknown += 1
+            else:
+                skipped_unknown += 1
             continue
 
         label_name = rules[domain]
@@ -223,6 +408,9 @@ def main():
         except Exception as exc:
             print(f"  ! Error labeling {msg['id']}: {exc}")
             errors += 1
+
+    if history_entries:
+        save_history(history_entries)
 
     print(
         f"\nDone. {applied} labeled automatically, "
