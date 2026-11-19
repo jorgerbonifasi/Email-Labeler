@@ -1,0 +1,47 @@
+name: Auto Label Gmail
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  auto-label:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: gmail-labeler
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Write secrets to disk
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+          GOOGLE_TOKEN: ${{ secrets.GOOGLE_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "$GOOGLE_CREDENTIALS" > credentials.json
+          echo "$GOOGLE_TOKEN" > token.json
+          echo "ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY" > .env
+
+      - name: Run auto-labeler
+        run: python3 auto_label.py
+
+      - name: Commit history updates
+        working-directory: ${{ github.workspace }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add gmail-labeler/history.json
+          git diff --staged --quiet || (git commit -m "chore: update history.json [skip ci]" && git push)

@@ -289,17 +289,13 @@ def main():
 
     history = load_history()
     if not history:
-        sys.exit(
-            "No history found. Run label_emails.py first and apply some labels "
-            "to build history.json."
-        )
+        print("No history found — run label_emails.py first to build history.json.")
+        return
 
     rules = build_domain_rules(history)
     if not rules:
-        sys.exit(
-            "No domains with a clear majority label yet.\n"
-            "Keep using label_emails.py — more decisions will resolve ties."
-        )
+        print("No domains with a clear majority label yet — keep using label_emails.py.")
+        return
 
     print(f"Auto-label rules ({len(rules)} domain(s)):")
     for domain, label in sorted(rules.items()):
