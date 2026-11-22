@@ -1,0 +1,5637 @@
+[
+  {
+    "sender_domain": "insideapple.apple.com",
+    "subject_keywords": [
+      "tell",
+      "us",
+      "about",
+      "apple",
+      "tv",
+      "streaming",
+      "service"
+    ],
+    "suggested_label_name": "Services/News",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:13"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "test",
+      "ride",
+      "appointment",
+      "cancelled"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:13"
+  },
+  {
+    "sender_domain": "mail.stanstedairport.com",
+    "subject_keywords": [
+      "welcome",
+      "london",
+      "stansted",
+      "airport"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:14"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "accepted",
+      "mydeposits",
+      "adr",
+      "adjudicator",
+      "decision",
+      "deadline",
+      "urn",
+      "mon"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:14"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "swapfiets",
+      "cancellation",
+      "appointment"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:15"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "test",
+      "ride",
+      "appointment",
+      "confirmed"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:16"
+  },
+  {
+    "sender_domain": "notify.railway.app",
+    "subject_keywords": [
+      "deployment",
+      "crashed",
+      "telegram",
+      "bot",
+      "shimmering",
+      "connection"
+    ],
+    "suggested_label_name": "Services/Servidor",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:16"
+  },
+  {
+    "sender_domain": "netlify.com",
+    "subject_keywords": [
+      "updating",
+      "netlify",
+      "s",
+      "privacy",
+      "statement"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:17"
+  },
+  {
+    "sender_domain": "dashboard.aviationadr.eu",
+    "subject_keywords": [
+      "cdrl",
+      "verified",
+      "successfully"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:17"
+  },
+  {
+    "sender_domain": "dashboard.aviationadr.eu",
+    "subject_keywords": [
+      "cdrl",
+      "verification",
+      "code"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Travel",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:18"
+  },
+  {
+    "sender_domain": "notify.railway.app",
+    "subject_keywords": [
+      "start",
+      "collecting",
+      "referral",
+      "credits"
+    ],
+    "suggested_label_name": "Services/Servidor",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:18"
+  },
+  {
+    "sender_domain": "notify.railway.app",
+    "subject_keywords": [
+      "deployment",
+      "crashed",
+      "telegram",
+      "bot",
+      "shimmering",
+      "connection"
+    ],
+    "suggested_label_name": "Services/Servidor",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:19"
+  },
+  {
+    "sender_domain": "notify.railway.app",
+    "subject_keywords": [
+      "deployment",
+      "crashed",
+      "telegram",
+      "bot",
+      "shimmering",
+      "connection"
+    ],
+    "suggested_label_name": "Services/Servidor",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:19"
+  },
+  {
+    "sender_domain": "notify.railway.app",
+    "subject_keywords": [
+      "all",
+      "aboard",
+      "welcome",
+      "railway"
+    ],
+    "suggested_label_name": "Services/Servidor",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:20"
+  },
+  {
+    "sender_domain": "lovable.dev",
+    "subject_keywords": [
+      "credits",
+      "now",
+      "go",
+      "x",
+      "further",
+      "limited",
+      "time",
+      "only"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:20"
+  },
+  {
+    "sender_domain": "info.nestpensions.org.uk",
+    "subject_keywords": [
+      "life",
+      "easier",
+      "one",
+      "pension"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Finances/UK",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:21"
+  },
+  {
+    "sender_domain": "survey.cr.aa.com",
+    "subject_keywords": [
+      "do",
+      "minute",
+      "us"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Travel",
+    "accepted": false,
+    "timestamp": "2026-04-25T11:58:22"
+  },
+  {
+    "sender_domain": "benestare.com.gt",
+    "subject_keywords": [
+      "gabriel",
+      "antonio",
+      "bonifasi",
+      "leal",
+      "renovacion"
+    ],
+    "suggested_label_name": "Finances/Insurance",
+    "applied_label_name": "Finances/Insurance",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:22"
+  },
+  {
+    "sender_domain": "wework.com",
+    "subject_keywords": [
+      "front",
+      "desk",
+      "guest",
+      "jorge",
+      "bonifasi",
+      "queen",
+      "st"
+    ],
+    "suggested_label_name": "Work",
+    "applied_label_name": "Work",
+    "accepted": true,
+    "timestamp": "2026-04-25T11:58:23"
+  },
+  {
+    "sender_domain": "info.runna.com",
+    "subject_keywords": [
+      "updates",
+      "runna",
+      "s",
+      "terms",
+      "policies"
+    ],
+    "suggested_label_name": "Services/Health/GYM/Sports",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:37"
+  },
+  {
+    "sender_domain": "news.railway.app",
+    "subject_keywords": [
+      "railway",
+      "agent",
+      "ipv",
+      "support"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:38"
+  },
+  {
+    "sender_domain": "info.nestpensions.org.uk",
+    "subject_keywords": [
+      "jorge",
+      "too",
+      "many",
+      "pensions",
+      "manage"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Finances/UK",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:38"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "th",
+      "april",
+      "gathering",
+      "tables",
+      "dinner",
+      "seats",
+      "left"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:39"
+  },
+  {
+    "sender_domain": "googlemail.com",
+    "subject_keywords": [
+      "updated",
+      "invitation",
+      "george",
+      "jorge",
+      "mon",
+      "apr",
+      "pm",
+      "pm"
+    ],
+    "suggested_label_name": "Work/Personal",
+    "applied_label_name": "Work/Personal",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:39"
+  },
+  {
+    "sender_domain": "yahoo.com",
+    "subject_keywords": [
+      "gastos",
+      "marzo",
+      "bam"
+    ],
+    "suggested_label_name": "Familia/Bonifasi",
+    "applied_label_name": "Finances",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:40"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "next",
+      "gathering",
+      "tables",
+      "wild",
+      "honey",
+      "th",
+      "april"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:41"
+  },
+  {
+    "sender_domain": "x.com",
+    "subject_keywords": [
+      "access",
+      "regain",
+      "access",
+      "two",
+      "factor",
+      "fa"
+    ],
+    "suggested_label_name": "Services/Social",
+    "applied_label_name": "Services/Social",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:41"
+  },
+  {
+    "sender_domain": "legal.shotguntheapp.com",
+    "subject_keywords": [
+      "update",
+      "our",
+      "terms",
+      "conditions",
+      "our",
+      "privacy",
+      "policy"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:42"
+  },
+  {
+    "sender_domain": "lovable.dev",
+    "subject_keywords": [
+      "project",
+      "just",
+      "had",
+      "its",
+      "very",
+      "first",
+      "visitor"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:43"
+  },
+  {
+    "sender_domain": "docusign.net",
+    "subject_keywords": [
+      "new",
+      "device",
+      "login"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:43"
+  },
+  {
+    "sender_domain": "notificationmail.microsoft.com",
+    "subject_keywords": [
+      "microsoft",
+      "storage",
+      "almost",
+      "full"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:44"
+  },
+  {
+    "sender_domain": "identity.post.xero.com",
+    "subject_keywords": [
+      "confirm",
+      "backup",
+      "email",
+      "address"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:44"
+  },
+  {
+    "sender_domain": "notifications.service.gov.uk",
+    "subject_keywords": [
+      "reminder",
+      "sign",
+      "skilled",
+      "worker",
+      "application",
+      "by",
+      "feb"
+    ],
+    "suggested_label_name": "Travel/Visa",
+    "applied_label_name": "Travel/Visa",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:45"
+  },
+  {
+    "sender_domain": "nestpensions.org.uk",
+    "subject_keywords": [
+      "important",
+      "nest",
+      "sent",
+      "message"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Finances/UK",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:45"
+  },
+  {
+    "sender_domain": "nestpensions.org.uk",
+    "subject_keywords": [
+      "passcode",
+      "log",
+      "into",
+      "nest",
+      "account"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Finances/UK",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:46"
+  },
+  {
+    "sender_domain": "nestpensions.org.uk",
+    "subject_keywords": [
+      "verify",
+      "email"
+    ],
+    "suggested_label_name": "Finances/Insurance",
+    "applied_label_name": "Finances/UK",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:47"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "fw",
+      "confirmed",
+      "are",
+      "registered",
+      "la",
+      "ticket",
+      "draw"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Eventos",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:47"
+  },
+  {
+    "sender_domain": "notifications.service.gov.uk",
+    "subject_keywords": [
+      "sign",
+      "skilled",
+      "worker",
+      "application",
+      "by",
+      "feb"
+    ],
+    "suggested_label_name": "Travel/Visa",
+    "applied_label_name": "Travel/Visa",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:48"
+  },
+  {
+    "sender_domain": "innogencapital.com",
+    "subject_keywords": [
+      "innogen",
+      "capital",
+      "jorge",
+      "ricardo",
+      "bonifasi",
+      "leal"
+    ],
+    "suggested_label_name": "Work",
+    "applied_label_name": "Work/Personal",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:49"
+  },
+  {
+    "sender_domain": "ors.org.uk",
+    "subject_keywords": [
+      "say",
+      "service",
+      "received",
+      "from",
+      "metropolitan",
+      "police"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Other",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:49"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "intro",
+      "jorge",
+      "leopoldo"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Travel/Visa",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:50"
+  },
+  {
+    "sender_domain": "barcelonahomes.com",
+    "subject_keywords": [
+      "intro",
+      "jorge",
+      "leopoldo"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Travel/Visa",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:50"
+  },
+  {
+    "sender_domain": "ors.org.uk",
+    "subject_keywords": [
+      "say",
+      "service",
+      "received",
+      "from",
+      "metropolitan",
+      "police"
+    ],
+    "suggested_label_name": "Services/Medical",
+    "applied_label_name": "Other",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:51"
+  },
+  {
+    "sender_domain": "met.police.uk",
+    "subject_keywords": [
+      "local",
+      "officers"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Other",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:51"
+  },
+  {
+    "sender_domain": "firsthand.co",
+    "subject_keywords": [
+      "jorge",
+      "profile",
+      "up",
+      "date"
+    ],
+    "suggested_label_name": "Education/Graduate/CEMS",
+    "applied_label_name": "Education/Graduate/CEMS",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:52"
+  },
+  {
+    "sender_domain": "atticstorage.co.uk",
+    "subject_keywords": [
+      "attic",
+      "marylebone",
+      "book",
+      "now",
+      "off"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:52"
+  },
+  {
+    "sender_domain": "atticstorage.co.uk",
+    "subject_keywords": [
+      "attic",
+      "storage",
+      "marylebone",
+      "more",
+      "than",
+      "just",
+      "empty",
+      "space"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:53"
+  },
+  {
+    "sender_domain": "atticstorage.co.uk",
+    "subject_keywords": [
+      "attic",
+      "storage",
+      "marylebone",
+      "size",
+      "matters"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:53"
+  },
+  {
+    "sender_domain": "atticstorage.co.uk",
+    "subject_keywords": [
+      "attic",
+      "storage",
+      "quote"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:54"
+  },
+  {
+    "sender_domain": "met.police.uk",
+    "subject_keywords": [
+      "update",
+      "metropolitan",
+      "police",
+      "crime",
+      "reference",
+      "number"
+    ],
+    "suggested_label_name": "Services/Medical",
+    "applied_label_name": "Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:55"
+  },
+  {
+    "sender_domain": "met.police.uk",
+    "subject_keywords": [
+      "metropolitan",
+      "police",
+      "survey",
+      "link"
+    ],
+    "suggested_label_name": "Services/Medical",
+    "applied_label_name": "Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:55"
+  },
+  {
+    "sender_domain": "met.police.uk",
+    "subject_keywords": [
+      "metropolitan",
+      "police",
+      "reference",
+      "number",
+      "please",
+      "do",
+      "not",
+      "reply"
+    ],
+    "suggested_label_name": "Services/Medical",
+    "applied_label_name": "Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:56"
+  },
+  {
+    "sender_domain": "docs.google.com",
+    "subject_keywords": [
+      "brainstorm",
+      "use",
+      "ejperezreyes",
+      "gmail",
+      "com",
+      "mueve",
+      "el",
+      "doc"
+    ],
+    "suggested_label_name": "Work",
+    "applied_label_name": "Work/Personal",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:56"
+  },
+  {
+    "sender_domain": "wifi.aena.es",
+    "subject_keywords": [
+      "aena",
+      "wi",
+      "fi",
+      "account",
+      "verification"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:57"
+  },
+  {
+    "sender_domain": "bsmsa.cat",
+    "subject_keywords": [
+      "welcome",
+      "smou"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:48:57"
+  },
+  {
+    "sender_domain": "bsmsa.cat",
+    "subject_keywords": [
+      "smou",
+      "user",
+      "activation"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:58"
+  },
+  {
+    "sender_domain": "tekkr.io",
+    "subject_keywords": [
+      "reminder",
+      "m",
+      "product",
+      "feedback",
+      "jorge",
+      "bonifasi",
+      "wed",
+      "may"
+    ],
+    "suggested_label_name": "Work/Tebi",
+    "applied_label_name": "Work/Personal",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:58"
+  },
+  {
+    "sender_domain": "notification.skype.com",
+    "subject_keywords": [
+      "accessing",
+      "skype",
+      "paid",
+      "services",
+      "via",
+      "skype",
+      "dial",
+      "pad"
+    ],
+    "suggested_label_name": "Services/Phone",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:48:59"
+  },
+  {
+    "sender_domain": "padi-mail.com",
+    "subject_keywords": [
+      "padi",
+      "account",
+      "verification",
+      "code"
+    ],
+    "suggested_label_name": "Services/Health/GYM/Sports",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:00"
+  },
+  {
+    "sender_domain": "purple.ai",
+    "subject_keywords": [
+      "password",
+      "reset"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:00"
+  },
+  {
+    "sender_domain": "notification.skype.com",
+    "subject_keywords": [
+      "important",
+      "updates",
+      "skype",
+      "paid",
+      "services"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:01"
+  },
+  {
+    "sender_domain": "stampede.ai",
+    "subject_keywords": [
+      "missed",
+      "service"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Other/Eventos",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:01"
+  },
+  {
+    "sender_domain": "insideapple.apple.com",
+    "subject_keywords": [
+      "keep",
+      "apple",
+      "account",
+      "safe",
+      "secure"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:02"
+  },
+  {
+    "sender_domain": "appsheet.com",
+    "subject_keywords": [
+      "here",
+      "app",
+      "budget",
+      "control"
+    ],
+    "suggested_label_name": "Work/Apps Script",
+    "applied_label_name": "Work/Apps Script",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:02"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "customer",
+      "service",
+      "survey"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:03"
+  },
+  {
+    "sender_domain": "microsoft.com",
+    "subject_keywords": [
+      "microsoft",
+      "cashback",
+      "program",
+      "update"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:04"
+  },
+  {
+    "sender_domain": "sib.gob.gt",
+    "subject_keywords": [
+      "denuncia"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:05"
+  },
+  {
+    "sender_domain": "email.apple.com",
+    "subject_keywords": [
+      "applecare",
+      "theft",
+      "loss",
+      "proof",
+      "coverage"
+    ],
+    "suggested_label_name": "Finances/Insurance",
+    "applied_label_name": "Finances/Insurance",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:06"
+  },
+  {
+    "sender_domain": "email.apple.com",
+    "subject_keywords": [
+      "thank",
+      "purchasing",
+      "applecare",
+      "theft",
+      "loss"
+    ],
+    "suggested_label_name": "Finances/Insurance",
+    "applied_label_name": "Finances/Insurance",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:07"
+  },
+  {
+    "sender_domain": "email.apple.com",
+    "subject_keywords": [
+      "applecare",
+      "expiration",
+      "notice"
+    ],
+    "suggested_label_name": "Finances/Insurance",
+    "applied_label_name": "Finances/Insurance",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:08"
+  },
+  {
+    "sender_domain": "transistor.fm",
+    "subject_keywords": [
+      "bienvenidos",
+      "whitepaper",
+      "premium",
+      "tu",
+      "acceso",
+      "exclusivo",
+      "al",
+      "mundo"
+    ],
+    "suggested_label_name": "Services/News",
+    "applied_label_name": "Services/News",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:08"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "google",
+      "manage",
+      "saved",
+      "addresses",
+      "google",
+      "account"
+    ],
+    "suggested_label_name": "Services/Social",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:09"
+  },
+  {
+    "sender_domain": "iffresearch-dm.com",
+    "subject_keywords": [
+      "take",
+      "part",
+      "survey",
+      "uk",
+      "home",
+      "office",
+      "experiences",
+      "as"
+    ],
+    "suggested_label_name": "Travel/Visa",
+    "applied_label_name": "Travel/Visa",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:10"
+  },
+  {
+    "sender_domain": "draperstartuphouse.com",
+    "subject_keywords": [
+      "woohoo",
+      "welcome",
+      "draper",
+      "entrepreneurial",
+      "network"
+    ],
+    "suggested_label_name": "Services/Social",
+    "applied_label_name": "Other/Eventos",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:11"
+  },
+  {
+    "sender_domain": "gritsee.com",
+    "subject_keywords": [
+      "gritsee",
+      "information",
+      "request"
+    ],
+    "suggested_label_name": "Work",
+    "applied_label_name": "Work/Otter",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:12"
+  },
+  {
+    "sender_domain": "printworkslondon.co.uk",
+    "subject_keywords": [
+      "printworks"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:13"
+  },
+  {
+    "sender_domain": "info.remitly.com",
+    "subject_keywords": [
+      "welcome",
+      "remitly"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:13"
+  },
+  {
+    "sender_domain": "mail.meetup.com",
+    "subject_keywords": [
+      "just",
+      "scheduled",
+      "australia",
+      "f",
+      "arcade",
+      "venue"
+    ],
+    "suggested_label_name": "Services/Health/GYM/Sports",
+    "applied_label_name": "Services/Health/GYM/Sports",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:14"
+  },
+  {
+    "sender_domain": "sussex.police.uk",
+    "subject_keywords": [
+      "online",
+      "form",
+      "submission",
+      "bca"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:16"
+  },
+  {
+    "sender_domain": "t.upwork.com",
+    "subject_keywords": [
+      "implementing",
+      "new",
+      "client",
+      "contract",
+      "initiation",
+      "fee"
+    ],
+    "suggested_label_name": "Work",
+    "applied_label_name": "Work",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:17"
+  },
+  {
+    "sender_domain": "service.police.uk",
+    "subject_keywords": [
+      "recent",
+      "submission"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:18"
+  },
+  {
+    "sender_domain": "chartexpo.com",
+    "subject_keywords": [
+      "welcome",
+      "chartexpo",
+      "google",
+      "sheets",
+      "add"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:19"
+  },
+  {
+    "sender_domain": "yahoo.com",
+    "subject_keywords": [
+      "multa",
+      "espa",
+      "jrbl",
+      "jan"
+    ],
+    "suggested_label_name": "Familia/BOLE",
+    "applied_label_name": "Travel",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:20"
+  },
+  {
+    "sender_domain": "intrum.com",
+    "subject_keywords": [
+      "ext",
+      "pagamento",
+      "por",
+      "mbway"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances/Insurance",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:21"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "google",
+      "cloud",
+      "solutions"
+    ],
+    "suggested_label_name": "Work",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:23"
+  },
+  {
+    "sender_domain": "benestare.com.gt",
+    "subject_keywords": [
+      "casa",
+      "acueducto"
+    ],
+    "suggested_label_name": "Finances/Insurance",
+    "applied_label_name": "Finances/Insurance",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:24"
+  },
+  {
+    "sender_domain": "email.jobteaser.com",
+    "subject_keywords": [
+      "only",
+      "few",
+      "days",
+      "left",
+      "register",
+      "masterclass"
+    ],
+    "suggested_label_name": "Work/Job Applications",
+    "applied_label_name": "Work/Job Applications",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:25"
+  },
+  {
+    "sender_domain": "email.jobteaser.com",
+    "subject_keywords": [
+      "masterclass",
+      "how",
+      "build",
+      "network"
+    ],
+    "suggested_label_name": "Work/Job Applications",
+    "applied_label_name": "Work/Job Applications",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:26"
+  },
+  {
+    "sender_domain": "t.upwork.com",
+    "subject_keywords": [
+      "jorge",
+      "ricardo",
+      "welcome",
+      "new",
+      "way",
+      "work"
+    ],
+    "suggested_label_name": "Work/Job Applications",
+    "applied_label_name": "Work/Job Applications",
+    "accepted": true,
+    "timestamp": "2026-04-25T14:49:27"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "google",
+      "cloud",
+      "solutions"
+    ],
+    "suggested_label_name": "Work",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-04-25T14:49:29"
+  },
+  {
+    "sender_domain": "news.railway.app",
+    "subject_keywords": [
+      "volume",
+      "browser",
+      "cli",
+      "browser",
+      "shell",
+      "file",
+      "browser",
+      "buckets"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:23:41"
+  },
+  {
+    "sender_domain": "communications.inter.it",
+    "subject_keywords": [
+      "redeem",
+      "coins",
+      "changes",
+      "interista",
+      "program",
+      "terms",
+      "conditions"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Other/Eventos",
+    "accepted": false,
+    "timestamp": "2026-05-30T13:23:44"
+  },
+  {
+    "sender_domain": "editorial.theguardian.com",
+    "subject_keywords": [
+      "will",
+      "unsubscribe",
+      "soon"
+    ],
+    "suggested_label_name": "Services/News",
+    "applied_label_name": "Services/News",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:23:46"
+  },
+  {
+    "sender_domain": "ambl.co",
+    "subject_keywords": [
+      "next",
+      "favourite",
+      "spot",
+      "just",
+      "landed",
+      "ambl"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:23:49"
+  },
+  {
+    "sender_domain": "community.apify.com",
+    "subject_keywords": [
+      "five",
+      "new",
+      "actors",
+      "live",
+      "apify",
+      "google",
+      "ai",
+      "overview"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:23:51"
+  },
+  {
+    "sender_domain": "workplaceextras.com",
+    "subject_keywords": [
+      "woo",
+      "employee",
+      "benefits",
+      "are",
+      "available",
+      "now"
+    ],
+    "suggested_label_name": "Work/Octupus",
+    "applied_label_name": "Work/Octupus",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:23:54"
+  },
+  {
+    "sender_domain": "workplaceextras.com",
+    "subject_keywords": [
+      "activate",
+      "extras",
+      "account"
+    ],
+    "suggested_label_name": "Work/Octupus",
+    "applied_label_name": "Work/Octupus",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:23:56"
+  },
+  {
+    "sender_domain": "sg.myschemes.co.uk",
+    "subject_keywords": [
+      "cyclescheme",
+      "request",
+      "been",
+      "submitted"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Work/Octupus",
+    "accepted": false,
+    "timestamp": "2026-05-30T13:23:59"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "next",
+      "gathering",
+      "tables",
+      "jul",
+      "s",
+      "london",
+      "rd",
+      "june"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:01"
+  },
+  {
+    "sender_domain": "members.ebay.co.uk",
+    "subject_keywords": [
+      "treasure",
+      "village",
+      "sent",
+      "message",
+      "about",
+      "apple",
+      "airpods",
+      "pro"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Services/E-Commerce",
+    "accepted": false,
+    "timestamp": "2026-05-30T13:24:04"
+  },
+  {
+    "sender_domain": "mail.carrental8.com",
+    "subject_keywords": [
+      "save",
+      "up",
+      "next",
+      "road",
+      "trip"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:07"
+  },
+  {
+    "sender_domain": "europcar.dk",
+    "subject_keywords": [
+      "tak",
+      "denne",
+      "gang"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:09"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "people",
+      "skipped",
+      "laundry",
+      "week",
+      "here",
+      "s",
+      "why"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:12"
+  },
+  {
+    "sender_domain": "icloud.com",
+    "subject_keywords": [
+      "rejsekort",
+      "receipt",
+      "may"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:14"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "gathering",
+      "tables",
+      "th",
+      "edition",
+      "menu",
+      "landed"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:17"
+  },
+  {
+    "sender_domain": "legal.spotify.com",
+    "subject_keywords": [
+      "updates",
+      "our",
+      "privacy",
+      "policy"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:20"
+  },
+  {
+    "sender_domain": "icloud.com",
+    "subject_keywords": [
+      "rejsekort",
+      "receipt",
+      "may"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:22"
+  },
+  {
+    "sender_domain": "news.railway.app",
+    "subject_keywords": [
+      "railway",
+      "agent",
+      "sandbox",
+      "ha",
+      "static",
+      "egress",
+      "github",
+      "org"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:25"
+  },
+  {
+    "sender_domain": "carrental8.com",
+    "subject_keywords": [
+      "car",
+      "rental",
+      "confirmation",
+      "copenhagen",
+      "downtown",
+      "denmark",
+      "booking",
+      "number"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:27"
+  },
+  {
+    "sender_domain": "carrental8.com",
+    "subject_keywords": [
+      "car",
+      "rental",
+      "confirmation",
+      "copenhagen",
+      "downtown",
+      "denmark",
+      "booking",
+      "number"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:30"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "photos",
+      "franziska",
+      "walid",
+      "s",
+      "wedding",
+      "slideshow"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:32"
+  },
+  {
+    "sender_domain": "icloud.com",
+    "subject_keywords": [
+      "account",
+      "been",
+      "created"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": false,
+    "timestamp": "2026-05-30T13:24:35"
+  },
+  {
+    "sender_domain": "icloud.com",
+    "subject_keywords": [
+      "one",
+      "time",
+      "password",
+      "rejsekort"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:38"
+  },
+  {
+    "sender_domain": "yahoo.com",
+    "subject_keywords": [
+      "gastos",
+      "abril",
+      "bam",
+      "revolut"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:40"
+  },
+  {
+    "sender_domain": "purple.ai",
+    "subject_keywords": [
+      "wifi",
+      "plan",
+      "upgrade"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:42"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "accepted",
+      "dom",
+      "dolla",
+      "thames",
+      "sat",
+      "aug",
+      "pm",
+      "pm"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:43"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "laundry",
+      "sorted",
+      "few",
+      "taps",
+      "jorge"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:44"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "next",
+      "gathering",
+      "tables",
+      "mauro",
+      "colagreco",
+      "rd",
+      "june"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:45"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "photos",
+      "franziska",
+      "walid",
+      "s",
+      "wedding",
+      "slideshow"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:47"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "ve",
+      "got",
+      "account"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:48"
+  },
+  {
+    "sender_domain": "news.railway.app",
+    "subject_keywords": [
+      "railway",
+      "ios",
+      "preview",
+      "now",
+      "testflight"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:49"
+  },
+  {
+    "sender_domain": "news.railway.app",
+    "subject_keywords": [
+      "railway",
+      "ios",
+      "cli",
+      "metrics",
+      "postgres",
+      "pitr"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:51"
+  },
+  {
+    "sender_domain": "community.apify.com",
+    "subject_keywords": [
+      "three",
+      "new",
+      "actors",
+      "now",
+      "live",
+      "apify",
+      "google",
+      "finance"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:52"
+  },
+  {
+    "sender_domain": "apify.com",
+    "subject_keywords": [
+      "start",
+      "building",
+      "own",
+      "actors"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:53"
+  },
+  {
+    "sender_domain": "3cket.com",
+    "subject_keywords": [
+      "access",
+      "vermut",
+      "soul"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:54"
+  },
+  {
+    "sender_domain": "3cket.com",
+    "subject_keywords": [
+      "order",
+      "vermut",
+      "soul"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Eventos",
+    "accepted": false,
+    "timestamp": "2026-05-30T13:24:55"
+  },
+  {
+    "sender_domain": "news.railway.app",
+    "subject_keywords": [
+      "easy",
+      "agent",
+      "setup",
+      "unified",
+      "template",
+      "search",
+      "railway",
+      "scale"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:24:57"
+  },
+  {
+    "sender_domain": "apify.com",
+    "subject_keywords": [
+      "control",
+      "actors",
+      "via",
+      "api"
+    ],
+    "suggested_label_name": "Other/Apps Script",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-05-30T13:24:58"
+  },
+  {
+    "sender_domain": "apify.com",
+    "subject_keywords": [
+      "integrate",
+      "actors",
+      "into",
+      "workflows"
+    ],
+    "suggested_label_name": "Services/E-Commerce",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-05-30T13:25:00"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "gathering",
+      "tables",
+      "joia",
+      "battersea",
+      "art",
+      "otel",
+      "th",
+      "may"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:25:01"
+  },
+  {
+    "sender_domain": "apify.com",
+    "subject_keywords": [
+      "welcome",
+      "apify"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:25:02"
+  },
+  {
+    "sender_domain": "supabase.com",
+    "subject_keywords": [
+      "new",
+      "invoice",
+      "from",
+      "supabase",
+      "pte",
+      "ltd",
+      "xgagae"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:25:03"
+  },
+  {
+    "sender_domain": "news.railway.app",
+    "subject_keywords": [
+      "undoable",
+      "volume",
+      "deletes",
+      "standard",
+      "ssh",
+      "auto",
+      "deploy",
+      "toggle"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:25:05"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "next",
+      "gathering",
+      "tables",
+      "joia",
+      "batterea",
+      "th",
+      "may"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-05-30T13:25:06"
+  },
+  {
+    "sender_domain": "rbkc.gov.uk",
+    "subject_keywords": [
+      "automatic",
+      "reply",
+      "refund",
+      "request",
+      "council",
+      "tax",
+      "account"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Other/Real Estate/Bills & Utilities",
+    "accepted": false,
+    "timestamp": "2026-06-12T20:21:36"
+  },
+  {
+    "sender_domain": "vermutandsoul.com",
+    "subject_keywords": [
+      "v",
+      "s",
+      "enquesta",
+      "satisfacci",
+      "sorteig"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Eventos",
+    "accepted": false,
+    "timestamp": "2026-06-12T20:21:37"
+  },
+  {
+    "sender_domain": "ukio.com",
+    "subject_keywords": [
+      "let",
+      "s",
+      "reconnect",
+      "flexible",
+      "housing",
+      "needs"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": false,
+    "timestamp": "2026-06-12T20:21:37"
+  },
+  {
+    "sender_domain": "digifact.com.gt",
+    "subject_keywords": [
+      "factura",
+      "electr",
+      "nica",
+      "de",
+      "uber",
+      "eats"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-06-12T20:21:38"
+  },
+  {
+    "sender_domain": "receipts.tab.travel",
+    "subject_keywords": [
+      "thanks",
+      "using",
+      "tab",
+      "il",
+      "giardino"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-06-12T20:21:38"
+  },
+  {
+    "sender_domain": "rhythmjapan.com",
+    "subject_keywords": [
+      "early",
+      "bird",
+      "deals",
+      "shred",
+      "japan",
+      "winter"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-06-12T20:21:39"
+  },
+  {
+    "sender_domain": "tillerhq.com",
+    "subject_keywords": [
+      "tiller",
+      "different",
+      "now"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-06-12T20:21:39"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "shared",
+      "some",
+      "google",
+      "account",
+      "data",
+      "claude"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:37"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "shared",
+      "some",
+      "google",
+      "account",
+      "data",
+      "hinge"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:38"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "credits",
+      "are",
+      "expiring"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:39"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "reminder",
+      "how",
+      "did",
+      "do",
+      "jorge"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:39"
+  },
+  {
+    "sender_domain": "docusign.net",
+    "subject_keywords": [
+      "expiration",
+      "pending",
+      "application",
+      "tenancy",
+      "cotrill",
+      "gardens"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:40"
+  },
+  {
+    "sender_domain": "hello.itv.com",
+    "subject_keywords": [
+      "sign",
+      "itvx",
+      "account"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-07-12T15:17:40"
+  },
+  {
+    "sender_domain": "clickrent.es",
+    "subject_keywords": [
+      "contrato"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:41"
+  },
+  {
+    "sender_domain": "clickrent.es",
+    "subject_keywords": [
+      "tu",
+      "reserva",
+      "cr",
+      "pg",
+      "est",
+      "confirmada"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:41"
+  },
+  {
+    "sender_domain": "clickrent.es",
+    "subject_keywords": [
+      "tu",
+      "reserva",
+      "cr",
+      "pg",
+      "est",
+      "confirmada"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:42"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "gathering",
+      "tables",
+      "turns",
+      "join",
+      "us",
+      "july",
+      "nd",
+      "pavyllon"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:42"
+  },
+  {
+    "sender_domain": "ambl.co",
+    "subject_keywords": [
+      "boxpark",
+      "x",
+      "ambl"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:42"
+  },
+  {
+    "sender_domain": "purple.ai",
+    "subject_keywords": [
+      "wifi",
+      "plan",
+      "upgrade"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:43"
+  },
+  {
+    "sender_domain": "shared1.ccsend.com",
+    "subject_keywords": [
+      "ultimo",
+      "aviso",
+      "actualiza",
+      "tu",
+      "m",
+      "todo",
+      "de",
+      "pago"
+    ],
+    "suggested_label_name": "Services/Phone",
+    "applied_label_name": "Services/Phone",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:43"
+  },
+  {
+    "sender_domain": "email.apple.com",
+    "subject_keywords": [
+      "ve",
+      "received",
+      "replacement",
+      "request"
+    ],
+    "suggested_label_name": "Finances/Insurance",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-07-12T15:17:44"
+  },
+  {
+    "sender_domain": "mail.apple.com",
+    "subject_keywords": [
+      "thanks",
+      "contacting",
+      "us"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:44"
+  },
+  {
+    "sender_domain": "email.apple.com",
+    "subject_keywords": [
+      "request",
+      "pending",
+      "payment"
+    ],
+    "suggested_label_name": "Finances/Insurance",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-07-12T15:17:45"
+  },
+  {
+    "sender_domain": "finlaybrewer.co.uk",
+    "subject_keywords": [
+      "email",
+      "viewing",
+      "confirmation",
+      "tenant",
+      "ref",
+      "ovwx",
+      "u",
+      "deosnw"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:45"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "how",
+      "did",
+      "do",
+      "jorge"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:46"
+  },
+  {
+    "sender_domain": "hello.itv.com",
+    "subject_keywords": [
+      "sign",
+      "itvx",
+      "account"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-07-12T15:17:46"
+  },
+  {
+    "sender_domain": "mail.axapartners.com",
+    "subject_keywords": [
+      "visa",
+      "benefits",
+      "portal",
+      "nuevo",
+      "acceso"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:47"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "here",
+      "everything",
+      "need",
+      "know",
+      "about",
+      "swapfiets"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:47"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "download",
+      "swapfiets",
+      "app"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:48"
+  },
+  {
+    "sender_domain": "racketeer.club",
+    "subject_keywords": [
+      "what",
+      "night",
+      "here",
+      "s",
+      "what",
+      "happens",
+      "next"
+    ],
+    "suggested_label_name": "Services/Health/GYM/Sports",
+    "applied_label_name": "Services/Health/GYM/Sports",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:48"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "welcome",
+      "swapfiets",
+      "new",
+      "ride",
+      "awaits"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:49"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "swapfiets",
+      "almost",
+      "ready",
+      "delivery"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:49"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "cancellation",
+      "appointment"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:50"
+  },
+  {
+    "sender_domain": "communications.myschemes.co.uk",
+    "subject_keywords": [
+      "swapfiets",
+      "power",
+      "code"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:50"
+  },
+  {
+    "sender_domain": "hermanos.co.za",
+    "subject_keywords": [
+      "thinning",
+      "hair",
+      "ve",
+      "been",
+      "ignoring",
+      "worth",
+      "reading"
+    ],
+    "suggested_label_name": "Services/Personal Care",
+    "applied_label_name": "Services/Personal Care",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:51"
+  },
+  {
+    "sender_domain": "apify.com",
+    "subject_keywords": [
+      "ai",
+      "agents",
+      "can",
+      "now",
+      "pay",
+      "tools",
+      "x",
+      "plus"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:51"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "accepted",
+      "flat",
+      "viewing",
+      "tenant",
+      "notice",
+      "overstone",
+      "road",
+      "fri"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:52"
+  },
+  {
+    "sender_domain": "laundryheap.com",
+    "subject_keywords": [
+      "d",
+      "love",
+      "feedback"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-07-12T15:17:52"
+  },
+  {
+    "sender_domain": "docusign.net",
+    "subject_keywords": [
+      "reminder",
+      "application",
+      "tenancy",
+      "cotrill",
+      "gardens"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:53"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "gathering",
+      "tables",
+      "coming",
+      "marseille",
+      "th",
+      "july"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:53"
+  },
+  {
+    "sender_domain": "render.com",
+    "subject_keywords": [
+      "updates",
+      "render",
+      "s",
+      "privacy",
+      "policy",
+      "terms",
+      "service"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:54"
+  },
+  {
+    "sender_domain": "my.lufthansa.com",
+    "subject_keywords": [
+      "take",
+      "part",
+      "our",
+      "satisfaction",
+      "survey"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:54"
+  },
+  {
+    "sender_domain": "feefo.com",
+    "subject_keywords": [
+      "don",
+      "t",
+      "forget",
+      "review",
+      "recent",
+      "experience",
+      "moss"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Shop",
+    "accepted": false,
+    "timestamp": "2026-07-12T15:17:54"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "accepted",
+      "travel",
+      "wimbledon",
+      "court",
+      "day",
+      "sat",
+      "jul",
+      "am"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:55"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "good",
+      "week",
+      "fresh",
+      "laundry"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:55"
+  },
+  {
+    "sender_domain": "mailgun.moss.co.uk",
+    "subject_keywords": [
+      "moss",
+      "hire",
+      "order",
+      "due",
+      "return"
+    ],
+    "suggested_label_name": "will-return-request",
+    "applied_label_name": "Shop",
+    "accepted": false,
+    "timestamp": "2026-07-12T15:17:56"
+  },
+  {
+    "sender_domain": "docusign.net",
+    "subject_keywords": [
+      "reminder",
+      "application",
+      "tenancy",
+      "cotrill",
+      "gardens"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:56"
+  },
+  {
+    "sender_domain": "feefo.com",
+    "subject_keywords": [
+      "feedback",
+      "request",
+      "behalf",
+      "moss"
+    ],
+    "suggested_label_name": "Shop",
+    "applied_label_name": "Shop",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:57"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "seats",
+      "left",
+      "th",
+      "june",
+      "diner",
+      "year",
+      "anniversary",
+      "july"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:57"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "shared",
+      "some",
+      "google",
+      "account",
+      "data",
+      "claude"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:58"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "just",
+      "landed",
+      "jorge"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-12T15:17:58"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "shared",
+      "some",
+      "google",
+      "account",
+      "data",
+      "claude"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:02"
+  },
+  {
+    "sender_domain": "info.nestpensions.org.uk",
+    "subject_keywords": [
+      "jorge",
+      "are",
+      "keeping",
+      "track",
+      "pensions"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Finances/UK",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:02"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "cheers",
+      "years",
+      "growing",
+      "google",
+      "maps",
+      "us"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:03"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "notebooklm",
+      "now",
+      "gemini",
+      "notebook"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:03"
+  },
+  {
+    "sender_domain": "mail.stanstedairport.com",
+    "subject_keywords": [
+      "summer",
+      "sale",
+      "off",
+      "airport",
+      "parking"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:04"
+  },
+  {
+    "sender_domain": "googlemail.com",
+    "subject_keywords": [
+      "delivery",
+      "status",
+      "notification",
+      "failure"
+    ],
+    "suggested_label_name": "Finances/BAM",
+    "applied_label_name": "Finances/BAM",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:04"
+  },
+  {
+    "sender_domain": "captivewifi.com",
+    "subject_keywords": [
+      "tell",
+      "us",
+      "about",
+      "first",
+      "restaurant",
+      "group",
+      "oak",
+      "poppy"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:05"
+  },
+  {
+    "sender_domain": "googlemail.com",
+    "subject_keywords": [
+      "delivery",
+      "status",
+      "notification",
+      "delay"
+    ],
+    "suggested_label_name": "Finances/BAM",
+    "applied_label_name": "Finances/BAM",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:05"
+  },
+  {
+    "sender_domain": "yahoo.com",
+    "subject_keywords": [
+      "gastos",
+      "junio",
+      "bam",
+      "amex",
+      "revolut"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:06"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "shared",
+      "some",
+      "google",
+      "account",
+      "data",
+      "claude"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:06"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "shared",
+      "some",
+      "google",
+      "account",
+      "data",
+      "claude"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:06"
+  },
+  {
+    "sender_domain": "mail.nectar.com",
+    "subject_keywords": [
+      "here",
+      "s",
+      "code"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:07"
+  },
+  {
+    "sender_domain": "googlemail.com",
+    "subject_keywords": [
+      "delivery",
+      "status",
+      "notification",
+      "delay"
+    ],
+    "suggested_label_name": "Finances/BAM",
+    "applied_label_name": "Finances/BAM",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:07"
+  },
+  {
+    "sender_domain": "apple.com",
+    "subject_keywords": [
+      "apple",
+      "case"
+    ],
+    "suggested_label_name": "will-return-request",
+    "applied_label_name": "Shop",
+    "accepted": false,
+    "timestamp": "2026-07-21T19:59:08"
+  },
+  {
+    "sender_domain": "apple.com",
+    "subject_keywords": [
+      "apple",
+      "case"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop",
+    "accepted": false,
+    "timestamp": "2026-07-21T19:59:08"
+  },
+  {
+    "sender_domain": "ambl.co",
+    "subject_keywords": [
+      "six",
+      "new",
+      "london",
+      "spots",
+      "now",
+      "ambl"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:09"
+  },
+  {
+    "sender_domain": "laundryheap.com",
+    "subject_keywords": [
+      "questions",
+      "help",
+      "us",
+      "improve"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:09"
+  },
+  {
+    "sender_domain": "mail.stanstedairport.com",
+    "subject_keywords": [
+      "exclusive",
+      "offer",
+      "ending",
+      "soon"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:10"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "shared",
+      "some",
+      "google",
+      "account",
+      "data",
+      "lime"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:10"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "just",
+      "landed",
+      "jorge"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:11"
+  },
+  {
+    "sender_domain": "aim.com",
+    "subject_keywords": [
+      "gastos",
+      "junio",
+      "bam",
+      "amex",
+      "revolut"
+    ],
+    "suggested_label_name": "Familia/Bonifasi",
+    "applied_label_name": "Finances",
+    "accepted": false,
+    "timestamp": "2026-07-21T19:59:11"
+  },
+  {
+    "sender_domain": "mymonday.es",
+    "subject_keywords": [
+      "new",
+      "invoice",
+      "from",
+      "monday",
+      "diagonal"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:12"
+  },
+  {
+    "sender_domain": "quoinly.net",
+    "subject_keywords": [
+      "quoinly",
+      "beta",
+      "almost",
+      "here"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:12"
+  },
+  {
+    "sender_domain": "notifications.withings.io",
+    "subject_keywords": [
+      "manage",
+      "subscription"
+    ],
+    "suggested_label_name": "Services/Health",
+    "applied_label_name": "Services/Health",
+    "accepted": true,
+    "timestamp": "2026-07-21T19:59:13"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "next",
+      "gathering",
+      "tables",
+      "savoy",
+      "gallery",
+      "rd",
+      "september"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:26"
+  },
+  {
+    "sender_domain": "aim.com",
+    "subject_keywords": [
+      "detalles",
+      "reclamos",
+      "redbridge"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances/Insurance",
+    "accepted": false,
+    "timestamp": "2026-08-23T14:03:26"
+  },
+  {
+    "sender_domain": "finlaybrewer.co.uk",
+    "subject_keywords": [
+      "email",
+      "viewing",
+      "confirmation",
+      "tenant",
+      "ref",
+      "ta",
+      "wkzgoaukhsw",
+      "gjbfwyw"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:27"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "fwd",
+      "email",
+      "viewing",
+      "confirmation",
+      "tenant",
+      "ref",
+      "ta",
+      "wkzgoaukhsw"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:27"
+  },
+  {
+    "sender_domain": "finlaybrewer.co.uk",
+    "subject_keywords": [
+      "email",
+      "viewing",
+      "confirmation",
+      "tenant",
+      "ref",
+      "ponlgtarge",
+      "dkgekfqdtsq"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:28"
+  },
+  {
+    "sender_domain": "2sync.com",
+    "subject_keywords": [
+      "removing",
+      "from",
+      "future",
+      "emails"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:28"
+  },
+  {
+    "sender_domain": "google.com",
+    "subject_keywords": [
+      "thanks",
+      "filling",
+      "out",
+      "form",
+      "formulario",
+      "de",
+      "postulaci",
+      "n"
+    ],
+    "suggested_label_name": "Familia/Bonifasi",
+    "applied_label_name": "Familia/Bonifasi",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:28"
+  },
+  {
+    "sender_domain": "yallavalhalla.com",
+    "subject_keywords": [
+      "yalla",
+      "valhalla",
+      "shipwreck",
+      "dreams",
+      "la",
+      "paris",
+      "estate",
+      "feb"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:29"
+  },
+  {
+    "sender_domain": "werksy.io",
+    "subject_keywords": [
+      "coupon",
+      "added"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Work",
+    "accepted": false,
+    "timestamp": "2026-08-23T14:03:29"
+  },
+  {
+    "sender_domain": "werksy.io",
+    "subject_keywords": [
+      "welcome",
+      "werksy",
+      "jorge"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Work",
+    "accepted": false,
+    "timestamp": "2026-08-23T14:03:29"
+  },
+  {
+    "sender_domain": "email.apple.com",
+    "subject_keywords": [
+      "trying",
+      "reach"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop",
+    "accepted": false,
+    "timestamp": "2026-08-23T14:03:30"
+  },
+  {
+    "sender_domain": "euro.apple.com",
+    "subject_keywords": [
+      "ve",
+      "received",
+      "email",
+      "follow",
+      "up"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop",
+    "accepted": false,
+    "timestamp": "2026-08-23T14:03:30"
+  },
+  {
+    "sender_domain": "smail.socialsignin.com",
+    "subject_keywords": [
+      "thanks",
+      "using",
+      "guest",
+      "wifi",
+      "wework"
+    ],
+    "suggested_label_name": "Work",
+    "applied_label_name": "Work",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:30"
+  },
+  {
+    "sender_domain": "mail.tnt.com",
+    "subject_keywords": [
+      "when",
+      "can",
+      "collect",
+      "shipment",
+      "apple",
+      "rma",
+      "gb",
+      "domestic"
+    ],
+    "suggested_label_name": "Services/Shipping & Print",
+    "applied_label_name": "Services/Shipping & Print",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:31"
+  },
+  {
+    "sender_domain": "payments.gocardless.com",
+    "subject_keywords": [
+      "welcome",
+      "gocardless"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:31"
+  },
+  {
+    "sender_domain": "payments.gocardless.com",
+    "subject_keywords": [
+      "gocardless",
+      "verification",
+      "code"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-08-23T14:03:32"
+  },
+  {
+    "sender_domain": "agoda.com",
+    "subject_keywords": [
+      "booking",
+      "confirmation",
+      "agoda",
+      "booking",
+      "id"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:32"
+  },
+  {
+    "sender_domain": "nic.in",
+    "subject_keywords": [
+      "regarding",
+      "e",
+      "visa",
+      "application"
+    ],
+    "suggested_label_name": "Travel/Visa",
+    "applied_label_name": "Travel/Visa",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:33"
+  },
+  {
+    "sender_domain": "nic.in",
+    "subject_keywords": [
+      "regarding",
+      "partially",
+      "filled",
+      "e",
+      "visa",
+      "application"
+    ],
+    "suggested_label_name": "Travel/Visa",
+    "applied_label_name": "Travel/Visa",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:33"
+  },
+  {
+    "sender_domain": "grupofelco.com",
+    "subject_keywords": [
+      "programa",
+      "invitados"
+    ],
+    "suggested_label_name": "Familia",
+    "applied_label_name": "Familia/Bonifasi",
+    "accepted": false,
+    "timestamp": "2026-08-23T14:03:33"
+  },
+  {
+    "sender_domain": "grupofelco.com",
+    "subject_keywords": [
+      "programa",
+      "invitados"
+    ],
+    "suggested_label_name": "Familia/Bonifasi",
+    "applied_label_name": "Familia/Bonifasi",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:34"
+  },
+  {
+    "sender_domain": "2sync.com",
+    "subject_keywords": [
+      "quick",
+      "question",
+      "about",
+      "sync"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:34"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "fwd",
+      "programa",
+      "invitados"
+    ],
+    "suggested_label_name": "Familia/Bonifasi",
+    "applied_label_name": "Familia/Bonifasi",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:35"
+  },
+  {
+    "sender_domain": "2sync.com",
+    "subject_keywords": [
+      "setup",
+      "takes",
+      "minutes"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:35"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "next",
+      "london",
+      "gathering",
+      "tables",
+      "soleil",
+      "by",
+      "claude",
+      "bosi"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:36"
+  },
+  {
+    "sender_domain": "2sync.com",
+    "subject_keywords": [
+      "still",
+      "syncing",
+      "notion",
+      "manually"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:36"
+  },
+  {
+    "sender_domain": "mail.tnt.com",
+    "subject_keywords": [
+      "when",
+      "can",
+      "collect",
+      "shipment",
+      "apple",
+      "rma",
+      "gb",
+      "domestic"
+    ],
+    "suggested_label_name": "Services/Shipping & Print",
+    "applied_label_name": "Services/Shipping & Print",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:37"
+  },
+  {
+    "sender_domain": "apify.com",
+    "subject_keywords": [
+      "apify",
+      "ai",
+      "cursor",
+      "plugin",
+      "macaly",
+      "more",
+      "new",
+      "ways"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:37"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "gathering",
+      "tables",
+      "august",
+      "th",
+      "menu",
+      "landed",
+      "our",
+      "hide"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:37"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "customer",
+      "service",
+      "survey"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:38"
+  },
+  {
+    "sender_domain": "gathering-tables.com",
+    "subject_keywords": [
+      "next",
+      "gathering",
+      "tables",
+      "hide",
+      "th",
+      "august"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:38"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "service",
+      "modification"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:38"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "service",
+      "modification"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:39"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "service",
+      "modification"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:39"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "service",
+      "modification"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:40"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "service",
+      "modification"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:40"
+  },
+  {
+    "sender_domain": "onelink.com",
+    "subject_keywords": [
+      "new",
+      "login",
+      "from",
+      "ios",
+      "mobile",
+      "safari"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:40"
+  },
+  {
+    "sender_domain": "reply.agoda-emails.com",
+    "subject_keywords": [
+      "agoda",
+      "welcome",
+      "gift",
+      "up",
+      "off",
+      "first",
+      "hotel",
+      "booking"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:41"
+  },
+  {
+    "sender_domain": "agoda-messaging.com",
+    "subject_keywords": [
+      "notification",
+      "from",
+      "agoda",
+      "aug",
+      "sep"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:41"
+  },
+  {
+    "sender_domain": "agoda-messaging.com",
+    "subject_keywords": [
+      "reply",
+      "from",
+      "zen",
+      "village",
+      "lombok",
+      "aug",
+      "sep"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:42"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "fwd",
+      "sep",
+      "confirmation"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:42"
+  },
+  {
+    "sender_domain": "agoda.com",
+    "subject_keywords": [
+      "booking",
+      "confirmation",
+      "agoda",
+      "booking",
+      "id"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:43"
+  },
+  {
+    "sender_domain": "news.thebatandball.com",
+    "subject_keywords": [
+      "ve",
+      "had",
+      "glow",
+      "up"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:43"
+  },
+  {
+    "sender_domain": "newsletter.awardfares.com",
+    "subject_keywords": [
+      "july",
+      "news",
+      "exclusive",
+      "awardhack",
+      "pro",
+      "offer",
+      "plus",
+      "what"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:43"
+  },
+  {
+    "sender_domain": "cayala.com",
+    "subject_keywords": [
+      "nueva",
+      "versi",
+      "n",
+      "sha"
+    ],
+    "suggested_label_name": "Familia/Leal",
+    "applied_label_name": "Familia/Leal",
+    "accepted": true,
+    "timestamp": "2026-08-23T14:03:44"
+  },
+  {
+    "sender_domain": "vitamojo.com",
+    "subject_keywords": [
+      "gail",
+      "s",
+      "bakery",
+      "password",
+      "reset",
+      "requested"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": false,
+    "timestamp": "2026-08-23T14:03:44"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "new",
+      "properties",
+      "found",
+      "search",
+      "bethnal",
+      "green",
+      "london"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:55"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "new",
+      "properties",
+      "found",
+      "search",
+      "bethnal",
+      "green",
+      "london"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:56"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "would",
+      "like",
+      "proceed",
+      "rent",
+      "our",
+      "bed",
+      "flat",
+      "wilmot"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:56"
+  },
+  {
+    "sender_domain": "aim.com",
+    "subject_keywords": [
+      "fw",
+      "customer",
+      "correspondence",
+      "from",
+      "stellar",
+      "bank"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:56"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "property",
+      "been",
+      "let",
+      "bed",
+      "flat",
+      "greenwood",
+      "road",
+      "e"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:57"
+  },
+  {
+    "sender_domain": "notify.floot.com",
+    "subject_keywords": [
+      "floot",
+      "account",
+      "will",
+      "deleted",
+      "october"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:57"
+  },
+  {
+    "sender_domain": "excess-baggage.com",
+    "subject_keywords": [
+      "kings",
+      "cross",
+      "lost",
+      "property",
+      "ref"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:57"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "unread",
+      "message",
+      "from",
+      "landlord",
+      "openrent"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:58"
+  },
+  {
+    "sender_domain": "neighbourgood.co",
+    "subject_keywords": [
+      "meet",
+      "us",
+      "hudson",
+      "street"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:59"
+  },
+  {
+    "sender_domain": "yallavalhalla.com",
+    "subject_keywords": [
+      "did",
+      "see",
+      "who",
+      "s",
+      "joining",
+      "shipwreck"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:59"
+  },
+  {
+    "sender_domain": "email.axs.com",
+    "subject_keywords": [
+      "harlem",
+      "globetrotters",
+      "rivalry",
+      "tour",
+      "presale",
+      "starts",
+      "now"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:07:59"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "new",
+      "properties",
+      "found",
+      "search",
+      "bethnal",
+      "green",
+      "london"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:00"
+  },
+  {
+    "sender_domain": "padelmates.se",
+    "subject_keywords": [
+      "self",
+      "organised",
+      "padel",
+      "meet",
+      "ups"
+    ],
+    "suggested_label_name": "Services/Health/GYM/Sports",
+    "applied_label_name": "Services/Health/GYM/Sports",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:00"
+  },
+  {
+    "sender_domain": "lostproperty.org",
+    "subject_keywords": [
+      "lostproperty",
+      "org",
+      "confirmation",
+      "item",
+      "been",
+      "registered",
+      "as",
+      "lost"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:01"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "appointment",
+      "confirmed"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:01"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "new",
+      "properties",
+      "found",
+      "search",
+      "bethnal",
+      "green",
+      "london"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:01"
+  },
+  {
+    "sender_domain": "sunday.teamtailor-mail.com",
+    "subject_keywords": [
+      "help",
+      "us",
+      "get",
+      "better"
+    ],
+    "suggested_label_name": "Work/Job Applications",
+    "applied_label_name": "Work/Job Applications",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:02"
+  },
+  {
+    "sender_domain": "user.openrent.com",
+    "subject_keywords": [
+      "new",
+      "openrent",
+      "message",
+      "from",
+      "landlord",
+      "bed",
+      "n"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:02"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "property",
+      "been",
+      "let",
+      "bed",
+      "flat",
+      "hoxton",
+      "st",
+      "n"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:03"
+  },
+  {
+    "sender_domain": "yallavalhalla.com",
+    "subject_keywords": [
+      "shipwreck",
+      "dreams",
+      "lineup",
+      "landed"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:03"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "new",
+      "properties",
+      "found",
+      "search",
+      "bethnal",
+      "green",
+      "london"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:03"
+  },
+  {
+    "sender_domain": "cayala.com",
+    "subject_keywords": [
+      "nueva",
+      "versi",
+      "n",
+      "sha"
+    ],
+    "suggested_label_name": "Familia/Leal",
+    "applied_label_name": "Familia/Leal",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:04"
+  },
+  {
+    "sender_domain": "e-comms.theo2.co.uk",
+    "subject_keywords": [
+      "thanks",
+      "coming",
+      "see",
+      "laver",
+      "cup",
+      "practice",
+      "day"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:05"
+  },
+  {
+    "sender_domain": "user.openrent.com",
+    "subject_keywords": [
+      "new",
+      "openrent",
+      "message",
+      "from",
+      "landlord",
+      "bed",
+      "e"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:05"
+  },
+  {
+    "sender_domain": "openrent.co.uk",
+    "subject_keywords": [
+      "jorge",
+      "ricardo",
+      "are",
+      "eligible",
+      "become",
+      "verified",
+      "tenant"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:05"
+  },
+  {
+    "sender_domain": "e-comms.theo2.co.uk",
+    "subject_keywords": [
+      "thanks",
+      "coming",
+      "see",
+      "laver",
+      "cup",
+      "practice",
+      "day"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:06"
+  },
+  {
+    "sender_domain": "dojo.tech",
+    "subject_keywords": [
+      "hope",
+      "enjoyed",
+      "experience"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:06"
+  },
+  {
+    "sender_domain": "e-comms.theo2.co.uk",
+    "subject_keywords": [
+      "important",
+      "information",
+      "laver",
+      "cup",
+      "practice",
+      "day"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:07"
+  },
+  {
+    "sender_domain": "feedback-marriott.com",
+    "subject_keywords": [
+      "reminder",
+      "jorge",
+      "tell",
+      "us",
+      "about",
+      "stay",
+      "courtyard",
+      "by"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:07"
+  },
+  {
+    "sender_domain": "axs.com",
+    "subject_keywords": [
+      "phone",
+      "number",
+      "updated"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:07"
+  },
+  {
+    "sender_domain": "comms.dstv.com",
+    "subject_keywords": [
+      "perfect",
+      "dstv",
+      "package",
+      "here"
+    ],
+    "suggested_label_name": "Services/News",
+    "applied_label_name": "Services/News",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:08"
+  },
+  {
+    "sender_domain": "e-comms.theo2.co.uk",
+    "subject_keywords": [
+      "important",
+      "information",
+      "laver",
+      "cup",
+      "practice",
+      "day"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:08"
+  },
+  {
+    "sender_domain": "email.axs.com",
+    "subject_keywords": [
+      "get",
+      "tickets",
+      "billie",
+      "jean",
+      "king",
+      "john",
+      "mcenroe",
+      "champions"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:09"
+  },
+  {
+    "sender_domain": "newsletter.awardfares.com",
+    "subject_keywords": [
+      "september",
+      "news",
+      "tahiti",
+      "miles",
+      "business",
+      "class",
+      "upgrade",
+      "improved"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:09"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "appointment",
+      "cancelled"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:10"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "customer",
+      "service",
+      "survey"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:10"
+  },
+  {
+    "sender_domain": "updates.deliveroo.com",
+    "subject_keywords": [
+      "tap",
+      "off",
+      "those",
+      "absolute",
+      "essentials"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:11"
+  },
+  {
+    "sender_domain": "feedback-marriott.com",
+    "subject_keywords": [
+      "tell",
+      "us",
+      "about",
+      "stay",
+      "courtyard",
+      "by",
+      "marriott",
+      "edinburgh"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:11"
+  },
+  {
+    "sender_domain": "netaffinity.io",
+    "subject_keywords": [
+      "thank",
+      "staying",
+      "us"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:12"
+  },
+  {
+    "sender_domain": "omio.com",
+    "subject_keywords": [
+      "omio",
+      "service",
+      "call",
+      "uber",
+      "powered",
+      "by",
+      "omio"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:12"
+  },
+  {
+    "sender_domain": "padelmates.se",
+    "subject_keywords": [
+      "coaching",
+      "session",
+      "padel",
+      "meet",
+      "ups"
+    ],
+    "suggested_label_name": "Services/Health/GYM/Sports",
+    "applied_label_name": "Services/Health/GYM/Sports",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:12"
+  },
+  {
+    "sender_domain": "greenlandsproperty.co.uk",
+    "subject_keywords": [
+      "one",
+      "bedroom",
+      "flat"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:13"
+  },
+  {
+    "sender_domain": "e-comms.theo2.co.uk",
+    "subject_keywords": [
+      "get",
+      "ready",
+      "laver",
+      "cup",
+      "practice",
+      "day"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:13"
+  },
+  {
+    "sender_domain": "themacallan.com",
+    "subject_keywords": [
+      "macallan",
+      "feedback"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Other",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:13"
+  },
+  {
+    "sender_domain": "e-comms.theo2.co.uk",
+    "subject_keywords": [
+      "get",
+      "ready",
+      "laver",
+      "cup",
+      "practice",
+      "day"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:14"
+  },
+  {
+    "sender_domain": "vivino.com",
+    "subject_keywords": [
+      "please",
+      "confirm",
+      "email",
+      "address"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:14"
+  },
+  {
+    "sender_domain": "finlaybrewer.co.uk",
+    "subject_keywords": [
+      "email",
+      "viewing",
+      "confirmation",
+      "tenant",
+      "ref",
+      "kp",
+      "mbngrveq",
+      "sbbare"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:15"
+  },
+  {
+    "sender_domain": "airindia.com",
+    "subject_keywords": [
+      "thank",
+      "contacting",
+      "us",
+      "case",
+      "id"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:15"
+  },
+  {
+    "sender_domain": "airindia.com",
+    "subject_keywords": [
+      "verify",
+      "one",
+      "time",
+      "password",
+      "air",
+      "india",
+      "support"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:15"
+  },
+  {
+    "sender_domain": "notices.dropbox.com",
+    "subject_keywords": [
+      "updates",
+      "our",
+      "terms",
+      "service",
+      "privacy",
+      "policy"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:16"
+  },
+  {
+    "sender_domain": "netaffinity.io",
+    "subject_keywords": [
+      "upcoming",
+      "stay",
+      "marmalade",
+      "hotel",
+      "isle",
+      "skye"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:16"
+  },
+  {
+    "sender_domain": "mynotifications.cvs.com",
+    "subject_keywords": [
+      "ve",
+      "updated",
+      "cvs",
+      "terms",
+      "use"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:16"
+  },
+  {
+    "sender_domain": "met.police.uk",
+    "subject_keywords": [
+      "metropolitan",
+      "police",
+      "reference",
+      "number",
+      "please",
+      "do",
+      "not",
+      "reply"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Other",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:17"
+  },
+  {
+    "sender_domain": "user.luma-mail.com",
+    "subject_keywords": [
+      "thank",
+      "joining",
+      "us"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:17"
+  },
+  {
+    "sender_domain": "service.police.uk",
+    "subject_keywords": [
+      "recent",
+      "submission"
+    ],
+    "suggested_label_name": "Services",
+    "applied_label_name": "Services",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:18"
+  },
+  {
+    "sender_domain": "calendar.luma-mail.com",
+    "subject_keywords": [
+      "lenny",
+      "s",
+      "newsletter",
+      "meetup",
+      "london",
+      "free",
+      "drinks",
+      "courtesy"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:18"
+  },
+  {
+    "sender_domain": "smartspaces.app",
+    "subject_keywords": [
+      "appointment",
+      "yy"
+    ],
+    "suggested_label_name": "Work/Job Applications",
+    "applied_label_name": "Work/Job Applications",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:18"
+  },
+  {
+    "sender_domain": "user.luma-mail.com",
+    "subject_keywords": [
+      "lenny",
+      "s",
+      "newsletter",
+      "meetup",
+      "london",
+      "see",
+      "event",
+      "today"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:19"
+  },
+  {
+    "sender_domain": "x.com",
+    "subject_keywords": [
+      "x",
+      "confirmation",
+      "code"
+    ],
+    "suggested_label_name": "Services/Social",
+    "applied_label_name": "Services/Social",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:19"
+  },
+  {
+    "sender_domain": "calendar.luma-mail.com",
+    "subject_keywords": [
+      "lenny",
+      "s",
+      "newsletter",
+      "meetup",
+      "london",
+      "free",
+      "drinks",
+      "courtesy"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:19"
+  },
+  {
+    "sender_domain": "quoinly.net",
+    "subject_keywords": [
+      "quoinly",
+      "beta",
+      "almost",
+      "here"
+    ],
+    "suggested_label_name": "Finances",
+    "applied_label_name": "Finances",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:20"
+  },
+  {
+    "sender_domain": "apify.com",
+    "subject_keywords": [
+      "run",
+      "by",
+      "apify",
+      "hits",
+      "sf",
+      "november",
+      "mcp",
+      "upgrade"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:21"
+  },
+  {
+    "sender_domain": "friends.figma.com",
+    "subject_keywords": [
+      "welcome",
+      "friends",
+      "figma"
+    ],
+    "suggested_label_name": "Services/Social",
+    "applied_label_name": "Services/Social",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:21"
+  },
+  {
+    "sender_domain": "calendar.luma-mail.com",
+    "subject_keywords": [
+      "registration",
+      "approved",
+      "lenny",
+      "s",
+      "newsletter",
+      "meetup",
+      "london",
+      "free"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:21"
+  },
+  {
+    "sender_domain": "lords.org",
+    "subject_keywords": [
+      "mcc",
+      "email",
+      "verification"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:22"
+  },
+  {
+    "sender_domain": "sieca.int",
+    "subject_keywords": [
+      "sieca",
+      "qu",
+      "est",
+      "n",
+      "demandando",
+      "los",
+      "consumidores",
+      "latinoamericanos"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:22"
+  },
+  {
+    "sender_domain": "tevreden.nl",
+    "subject_keywords": [
+      "reminder",
+      "opinion",
+      "important",
+      "us"
+    ],
+    "suggested_label_name": "Services/Medical",
+    "applied_label_name": "Services/Medical",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:22"
+  },
+  {
+    "sender_domain": "bluemarlingilitrawangan.com",
+    "subject_keywords": [
+      "blue",
+      "marlin",
+      "dive",
+      "gili",
+      "trawangan",
+      "invoice",
+      "ref",
+      "inv"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:23"
+  },
+  {
+    "sender_domain": "bluemarlingilitrawangan.com",
+    "subject_keywords": [
+      "blue",
+      "marlin",
+      "dive",
+      "gili",
+      "trawangan",
+      "invoice",
+      "ref",
+      "inv"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:23"
+  },
+  {
+    "sender_domain": "visa.com",
+    "subject_keywords": [
+      "visa",
+      "otp"
+    ],
+    "suggested_label_name": "Travel/Visa",
+    "applied_label_name": "Travel/Visa",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:24"
+  },
+  {
+    "sender_domain": "bluemarlingilitrawangan.com",
+    "subject_keywords": [
+      "fun",
+      "diving",
+      "paperwork",
+      "pdf",
+      "been",
+      "signed"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:24"
+  },
+  {
+    "sender_domain": "tevreden.nl",
+    "subject_keywords": [
+      "opinion",
+      "important",
+      "us"
+    ],
+    "suggested_label_name": "Services/Medical",
+    "applied_label_name": "Services/Medical",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:25"
+  },
+  {
+    "sender_domain": "aim.com",
+    "subject_keywords": [
+      "gastos",
+      "julio",
+      "amex"
+    ],
+    "suggested_label_name": "Finances/AMEX",
+    "applied_label_name": "Finances/AMEX",
+    "accepted": true,
+    "timestamp": "2026-10-04T14:08:25"
+  },
+  {
+    "sender_domain": "email.axs.com",
+    "subject_keywords": [
+      "mgm",
+      "slam",
+      "presented",
+      "by",
+      "capital",
+      "one",
+      "presale",
+      "starts"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:29"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "good",
+      "week",
+      "fresh",
+      "laundry"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:29"
+  },
+  {
+    "sender_domain": "notify.floot.com",
+    "subject_keywords": [
+      "final",
+      "notice",
+      "floot",
+      "account",
+      "deleted",
+      "days"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:29"
+  },
+  {
+    "sender_domain": "identity.post.xero.com",
+    "subject_keywords": [
+      "verification",
+      "code"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:30"
+  },
+  {
+    "sender_domain": "newsletter.awardfares.com",
+    "subject_keywords": [
+      "october",
+      "news",
+      "what",
+      "airlines",
+      "told",
+      "us",
+      "lisbon",
+      "ui"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:31"
+  },
+  {
+    "sender_domain": "mealto.com",
+    "subject_keywords": [
+      "xi",
+      "biangbiang",
+      "noodles",
+      "new",
+      "reservation",
+      "jorge",
+      "ricardo",
+      "bonifasi"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:31"
+  },
+  {
+    "sender_domain": "moonshot.kimi.ai",
+    "subject_keywords": [
+      "kimi",
+      "k",
+      "pro",
+      "here"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:32"
+  },
+  {
+    "sender_domain": "render.com",
+    "subject_keywords": [
+      "important",
+      "advisory",
+      "recent",
+      "industry",
+      "security",
+      "disclosures"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:32"
+  },
+  {
+    "sender_domain": "neighbourgood.co",
+    "subject_keywords": [
+      "discover",
+      "new",
+      "work",
+      "escape",
+      "de",
+      "verge"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:32"
+  },
+  {
+    "sender_domain": "email.meta.com",
+    "subject_keywords": [
+      "updated",
+      "meta",
+      "account",
+      "facebook",
+      "instagram"
+    ],
+    "suggested_label_name": "Services/Social",
+    "applied_label_name": "Services/Social",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:33"
+  },
+  {
+    "sender_domain": "railway.app",
+    "subject_keywords": [
+      "urgent",
+      "railway",
+      "security",
+      "disclosure",
+      "rotate",
+      "credentials"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:33"
+  },
+  {
+    "sender_domain": "claro.com.gt",
+    "subject_keywords": [
+      "codigo",
+      "de",
+      "seguridad",
+      "mi",
+      "claro"
+    ],
+    "suggested_label_name": "Services/Phone",
+    "applied_label_name": "Services/Phone",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:34"
+  },
+  {
+    "sender_domain": "bolt.eu",
+    "subject_keywords": [
+      "new",
+      "device",
+      "sign",
+      "detected",
+      "bolt",
+      "account"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:34"
+  },
+  {
+    "sender_domain": "vercel.com",
+    "subject_keywords": [
+      "failed",
+      "deployment",
+      "from",
+      "jorgebonifasi",
+      "stack"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:34"
+  },
+  {
+    "sender_domain": "purple.ai",
+    "subject_keywords": [
+      "wifi",
+      "plan",
+      "upgrade"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:35"
+  },
+  {
+    "sender_domain": "apify.com",
+    "subject_keywords": [
+      "apify",
+      "plugin",
+      "coding",
+      "agent",
+      "plus",
+      "run",
+      "by",
+      "apify"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:35"
+  },
+  {
+    "sender_domain": "mail.laundryheap.com",
+    "subject_keywords": [
+      "just",
+      "landed",
+      "jorge"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:36"
+  },
+  {
+    "sender_domain": "yallavalhalla.com",
+    "subject_keywords": [
+      "only",
+      "early",
+      "birds",
+      "left"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:36"
+  },
+  {
+    "sender_domain": "mail.eatclub.com.au",
+    "subject_keywords": [
+      "jorge",
+      "where",
+      "did",
+      "go",
+      "wrong"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:36"
+  },
+  {
+    "sender_domain": "mail.nicholsonspubs.co.uk",
+    "subject_keywords": [
+      "hope",
+      "enjoyed",
+      "visit"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:37"
+  },
+  {
+    "sender_domain": "qemailserver.com",
+    "subject_keywords": [
+      "laver",
+      "cup",
+      "london",
+      "feedback"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:37"
+  },
+  {
+    "sender_domain": "wifi.contact.sky",
+    "subject_keywords": [
+      "login",
+      "wi",
+      "fi"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:38"
+  },
+  {
+    "sender_domain": "mail.nectar.com",
+    "subject_keywords": [
+      "here",
+      "s",
+      "code"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:38"
+  },
+  {
+    "sender_domain": "swapfiets.com",
+    "subject_keywords": [
+      "let",
+      "s",
+      "sort",
+      "out",
+      "outstanding",
+      "surcharge",
+      "together"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:38"
+  },
+  {
+    "sender_domain": "li.me",
+    "subject_keywords": [
+      "request",
+      "how",
+      "would",
+      "rate",
+      "support",
+      "received",
+      "from",
+      "lime"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:39"
+  },
+  {
+    "sender_domain": "sunday.teamtailor-mail.com",
+    "subject_keywords": [
+      "d",
+      "love",
+      "keep",
+      "our",
+      "talent",
+      "pool"
+    ],
+    "suggested_label_name": "Work/Job Applications",
+    "applied_label_name": "Work/Job Applications",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:39"
+  },
+  {
+    "sender_domain": "email.wembleystadium.com",
+    "subject_keywords": [
+      "thank",
+      "attending",
+      "england",
+      "v",
+      "czechia"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:40"
+  },
+  {
+    "sender_domain": "li.me",
+    "subject_keywords": [
+      "lime",
+      "forgot",
+      "end",
+      "ride"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:40"
+  },
+  {
+    "sender_domain": "li.me",
+    "subject_keywords": [
+      "lime"
+    ],
+    "suggested_label_name": "Services/Transport & Food Delivery",
+    "applied_label_name": "Services/Transport & Food Delivery",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:40"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "accepted",
+      "hang",
+      "out",
+      "lo",
+      "s",
+      "wed",
+      "oct",
+      "pm"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:41"
+  },
+  {
+    "sender_domain": "avios.com",
+    "subject_keywords": [
+      "accounts",
+      "are",
+      "now",
+      "linked"
+    ],
+    "suggested_label_name": "Travel",
+    "applied_label_name": "Travel",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:41"
+  },
+  {
+    "sender_domain": "supabase.com",
+    "subject_keywords": [
+      "supabase",
+      "new",
+      "project",
+      "launched"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:42"
+  },
+  {
+    "sender_domain": "supabase.com",
+    "subject_keywords": [
+      "new",
+      "invoice",
+      "from",
+      "supabase",
+      "pte",
+      "ltd",
+      "xgagae"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:42"
+  },
+  {
+    "sender_domain": "email.wembleystadium.com",
+    "subject_keywords": [
+      "important",
+      "information",
+      "ahead",
+      "visit"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Eventos",
+    "accepted": false,
+    "timestamp": "2026-10-31T11:02:43"
+  },
+  {
+    "sender_domain": "info.vercel.com",
+    "subject_keywords": [
+      "make",
+      "coding",
+      "agent",
+      "vercel",
+      "expert"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:43"
+  },
+  {
+    "sender_domain": "vercel.com",
+    "subject_keywords": [
+      "failed",
+      "cli",
+      "deployment",
+      "from",
+      "jorge",
+      "bonifasi",
+      "octopuslegacy",
+      "com"
+    ],
+    "suggested_label_name": "Work/Octupus",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-10-31T11:02:43"
+  },
+  {
+    "sender_domain": "vercel.com",
+    "subject_keywords": [
+      "vercel",
+      "sign",
+      "up",
+      "code"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:44"
+  },
+  {
+    "sender_domain": "vercel.com",
+    "subject_keywords": [
+      "vercel",
+      "account",
+      "email"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-10-31T11:02:44"
+  },
+  {
+    "sender_domain": "mail.rightmove.co.uk",
+    "subject_keywords": [
+      "ready",
+      "move",
+      "take",
+      "next",
+      "step"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-10-31T16:15:11"
+  },
+  {
+    "sender_domain": "notifications.service.gov.uk",
+    "subject_keywords": [
+      "password",
+      "gov",
+      "uk",
+      "one",
+      "login",
+      "been",
+      "reset",
+      "mae"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Travel/Visa",
+    "accepted": false,
+    "timestamp": "2026-10-31T16:15:11"
+  },
+  {
+    "sender_domain": "notifications.service.gov.uk",
+    "subject_keywords": [
+      "gov",
+      "uk",
+      "one",
+      "login",
+      "eich",
+      "gov",
+      "uk",
+      "one"
+    ],
+    "suggested_label_name": "Finances/UK",
+    "applied_label_name": "Travel/Visa",
+    "accepted": false,
+    "timestamp": "2026-10-31T16:15:12"
+  },
+  {
+    "sender_domain": "notifications.service.gov.uk",
+    "subject_keywords": [
+      "security",
+      "code",
+      "gov",
+      "uk",
+      "one",
+      "login",
+      "eich",
+      "cod"
+    ],
+    "suggested_label_name": "Travel/Visa",
+    "applied_label_name": "Travel/Visa",
+    "accepted": true,
+    "timestamp": "2026-10-31T16:15:12"
+  },
+  {
+    "sender_domain": "mail.eu.nekohealth.com",
+    "subject_keywords": [
+      "give",
+      "neko",
+      "health",
+      "scan"
+    ],
+    "suggested_label_name": "Services/Health",
+    "applied_label_name": "Services/Health",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:44"
+  },
+  {
+    "sender_domain": "southbankcentre.co.uk",
+    "subject_keywords": [
+      "please",
+      "let",
+      "us",
+      "know",
+      "preferences"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Arts",
+    "accepted": false,
+    "timestamp": "2026-11-12T20:42:45"
+  },
+  {
+    "sender_domain": "stirlingackroyd.com",
+    "subject_keywords": [
+      "property",
+      "match",
+      "from",
+      "stirling",
+      "ackroyd"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:45"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "viewing",
+      "cancellation"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:46"
+  },
+  {
+    "sender_domain": "southbankcentre.co.uk",
+    "subject_keywords": [
+      "thrilled",
+      "want",
+      "hear",
+      "from",
+      "us"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Arts",
+    "accepted": false,
+    "timestamp": "2026-11-12T20:42:46"
+  },
+  {
+    "sender_domain": "dish.co",
+    "subject_keywords": [
+      "prenotazione",
+      "presso",
+      "l",
+      "antica"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": false,
+    "timestamp": "2026-11-12T20:42:47"
+  },
+  {
+    "sender_domain": "dish.co",
+    "subject_keywords": [
+      "la",
+      "tua",
+      "prenotazione",
+      "presso",
+      "l",
+      "antica",
+      "attesa",
+      "di"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:47"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "fwd",
+      "package",
+      "ready",
+      "pick",
+      "up",
+      "amazon",
+      "counter",
+      "collect"
+    ],
+    "suggested_label_name": "Familia",
+    "applied_label_name": "Services/E-Commerce",
+    "accepted": false,
+    "timestamp": "2026-11-12T20:42:48"
+  },
+  {
+    "sender_domain": "research.anthropic.com",
+    "subject_keywords": [
+      "d",
+      "love",
+      "thoughts",
+      "claude"
+    ],
+    "suggested_label_name": "Other",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": false,
+    "timestamp": "2026-11-12T20:42:48"
+  },
+  {
+    "sender_domain": "updates.howler-pulse.com",
+    "subject_keywords": [
+      "ballito",
+      "corona",
+      "sunsets",
+      "summer",
+      "tour",
+      "line",
+      "up"
+    ],
+    "suggested_label_name": "Other/Entertainment",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:49"
+  },
+  {
+    "sender_domain": "updates.howler-pulse.com",
+    "subject_keywords": [
+      "durban",
+      "corona",
+      "sunsets",
+      "summer",
+      "tour",
+      "line",
+      "up"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Entertainment",
+    "accepted": false,
+    "timestamp": "2026-11-12T20:42:49"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "viewing",
+      "confirmation"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:49"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "marsh",
+      "parsons"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:50"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "marsh",
+      "parsons"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:51"
+  },
+  {
+    "sender_domain": "embargomail.com",
+    "subject_keywords": [
+      "honi",
+      "poke",
+      "rewards",
+      "are",
+      "moving",
+      "bring",
+      "them",
+      "copy"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:51"
+  },
+  {
+    "sender_domain": "updates.howler-pulse.com",
+    "subject_keywords": [
+      "pretoria",
+      "corona",
+      "sunsets",
+      "summer",
+      "tour",
+      "line",
+      "up"
+    ],
+    "suggested_label_name": "Other/Eventos",
+    "applied_label_name": "Other/Eventos",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:52"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "email",
+      "from",
+      "marsh",
+      "parsons",
+      "camden"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:52"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "email",
+      "from",
+      "marsh",
+      "parsons",
+      "camden"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:52"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "email",
+      "from",
+      "marsh",
+      "parsons",
+      "camden"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:53"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "email",
+      "from",
+      "marsh",
+      "parsons",
+      "camden"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:53"
+  },
+  {
+    "sender_domain": "marshandparsons.co.uk",
+    "subject_keywords": [
+      "email",
+      "from",
+      "marsh",
+      "parsons",
+      "camden"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:54"
+  },
+  {
+    "sender_domain": "uk.heytea-marketing.com",
+    "subject_keywords": [
+      "something",
+      "warm",
+      "cold",
+      "days",
+      "little",
+      "treat"
+    ],
+    "suggested_label_name": "Other/Food & Dining",
+    "applied_label_name": "Other/Food & Dining",
+    "accepted": true,
+    "timestamp": "2026-11-12T20:42:54"
+  },
+  {
+    "sender_domain": "aim.com",
+    "subject_keywords": [
+      "customer",
+      "correspondence",
+      "from",
+      "stellar",
+      "bank"
+    ],
+    "suggested_label_name": "Familia/Bonifasi",
+    "applied_label_name": "Familia/BOLE",
+    "accepted": false,
+    "timestamp": "2026-11-12T20:42:54"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "enquiry",
+      "into",
+      "bayer",
+      "house"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-18T08:00:15"
+  },
+  {
+    "sender_domain": "chestertons.co.uk",
+    "subject_keywords": [
+      "rental",
+      "opportunity",
+      "st",
+      "john",
+      "s",
+      "wood"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-19T22:58:30"
+  },
+  {
+    "sender_domain": "chestertons.co.uk",
+    "subject_keywords": [
+      "chestertons",
+      "property",
+      "listing"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-19T22:58:33"
+  },
+  {
+    "sender_domain": "chestertons.co.uk",
+    "subject_keywords": [
+      "enquiry",
+      "into",
+      "bayer",
+      "house"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-19T22:58:36"
+  },
+  {
+    "sender_domain": "gmail.com",
+    "subject_keywords": [
+      "enquiry",
+      "into",
+      "bayer",
+      "house"
+    ],
+    "suggested_label_name": "Other/Real Estate",
+    "applied_label_name": "Other/Real Estate",
+    "accepted": true,
+    "timestamp": "2026-11-19T22:58:40"
+  },
+  {
+    "sender_domain": "brightpay.co.uk",
+    "subject_keywords": [
+      "payslip",
+      "from",
+      "octopus",
+      "legacy",
+      "limited",
+      "now",
+      "available"
+    ],
+    "suggested_label_name": "Work/Octupus",
+    "applied_label_name": "Work/Octupus",
+    "accepted": true,
+    "timestamp": "2026-11-20T09:14:20"
+  }
+]
