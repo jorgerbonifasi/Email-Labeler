@@ -345,6 +345,7 @@ def main():
                         label_name = suggestion.get("label_name", "")
                         if not label_id or label_id not in label_id_to_name:
                             skipped_unknown += 1
+                            print(f"  ? @{domain}: \"{subject[:60]}\"  (Claude {confidence}% → invalid label)")
                             continue
                         for attempt in range(3):
                             try:
@@ -369,6 +370,8 @@ def main():
                             "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
                         })
                     else:
+                        confidence_str = f"{confidence}%" if suggestion else "no suggestion"
+                        print(f"  ? @{domain}: \"{subject[:60]}\"  (Claude {confidence_str})")
                         skipped_unknown += 1
                 except Exception as exc:
                     print(f"  ! Claude error for {msg['id']}: {exc}")
