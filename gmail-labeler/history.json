@@ -5633,5 +5633,93 @@
     "applied_label_name": "Work/Octupus",
     "accepted": true,
     "timestamp": "2026-11-20T09:14:20"
+  },
+  {
+    "sender_domain": "fonua.com",
+    "subject_keywords": [
+      "shipment",
+      "from",
+      "order",
+      "uk",
+      "way"
+    ],
+    "suggested_label_name": "Services/Shipping & Print",
+    "applied_label_name": "Services/Shipping & Print",
+    "accepted": true,
+    "timestamp": "2026-11-25T18:15:14"
+  },
+  {
+    "sender_domain": "uniqlo.eu",
+    "subject_keywords": [
+      "order",
+      "been",
+      "packed",
+      "ready",
+      "ship"
+    ],
+    "suggested_label_name": "Shop",
+    "applied_label_name": "Shop",
+    "accepted": true,
+    "timestamp": "2026-11-25T18:15:19"
+  },
+  {
+    "sender_domain": "shop.app",
+    "subject_keywords": [
+      "shop",
+      "sign",
+      "code"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-11-25T18:15:25"
+  },
+  {
+    "sender_domain": "shop.app",
+    "subject_keywords": [
+      "shop",
+      "sign",
+      "code"
+    ],
+    "suggested_label_name": "Shop/Online Services",
+    "applied_label_name": "Shop/Online Services",
+    "accepted": true,
+    "timestamp": "2026-11-25T18:15:28"
+  },
+  {
+    "sender_domain": "uniqlo.eu",
+    "subject_keywords": [
+      "thank",
+      "uniqlo",
+      "purchase"
+    ],
+    "suggested_label_name": "Shop",
+    "applied_label_name": "Shop",
+    "accepted": true,
+    "timestamp": "2026-11-25T18:15:30"
+  },
+  {
+    "sender_domain": "uniqlo.eu",
+    "subject_keywords": [
+      "order",
+      "been",
+      "cancelled"
+    ],
+    "suggested_label_name": "Shop",
+    "applied_label_name": "Shop",
+    "accepted": true,
+    "timestamp": "2026-11-25T18:15:33"
+  },
+  {
+    "sender_domain": "uniqlo.eu",
+    "subject_keywords": [
+      "thank",
+      "uniqlo",
+      "purchase"
+    ],
+    "suggested_label_name": "Shop",
+    "applied_label_name": "Shop",
+    "accepted": true,
+    "timestamp": "2026-11-25T18:15:35"
   }
 ]
