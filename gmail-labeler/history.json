@@ -5721,5 +5721,29 @@
     "applied_label_name": "Shop",
     "accepted": true,
     "timestamp": "2026-11-25T18:15:35"
+  },
+  {
+    "sender_domain": "email.hived.space",
+    "subject_keywords": [
+      "successfully",
+      "delivered"
+    ],
+    "suggested_label_name": "Services/Shipping & Print",
+    "applied_label_name": "Services/Shipping & Print",
+    "accepted": true,
+    "timestamp": "2026-11-26T17:56:24"
+  },
+  {
+    "sender_domain": "email.hived.space",
+    "subject_keywords": [
+      "uniqlo",
+      "order",
+      "its",
+      "way"
+    ],
+    "suggested_label_name": "Services/Shipping & Print",
+    "applied_label_name": "Services/Shipping & Print",
+    "accepted": true,
+    "timestamp": "2026-11-26T17:56:27"
   }
 ]
